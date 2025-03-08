@@ -1,0 +1,208 @@
+.ProductDisplay{
+    width: 100%;
+    padding: 20px;
+}
+.PaymentDetails{
+    width: 50%;
+}
+.CartProduct{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    /* justify-content: space-between; */
+}
+.CartProduct img{
+    width: 250px;
+}
+
+.OrderText{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+.Line{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+
+.Lines{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin-top: 20px;
+}
+.Here{
+    color: goldenrod;
+    font-family: "Agdasima", serif;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.Here span{
+    color: black;
+    font-family: "Agdasima", serif;
+    font-size: 2.5rem;
+}
+.Oeder{
+ display: flex;
+ flex-direction: column;
+}
+.Size{
+    display: flex;
+}
+.Img{
+    width: 100%;
+
+}
+.IMgDisplay{
+    width: 100%;
+    display: flex;
+}
+.IMgDisplay img{
+    width: 50%;
+}
+
+
+.SelectSize select{
+    width: 80px;
+    border: none;
+}
+.Price{
+    width: 100%;
+    text-align: center;
+
+}
+.Quantity{
+    width: 100%;
+    /* display: flex; */
+    /* align-items: center; */
+/* justify-content: center; */
+    text-align: center;
+
+}
+
+.Btn{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    place-content: end;
+    font-size: 1.5rem;
+}
+
+.Btn button{
+    cursor: pointer;
+    width: 50px;
+    border-radius: 25px;
+    background-color: goldenrod;
+
+}
+.TotalPrice{
+    width: 100%;
+    text-align: end;
+
+}
+.OrderDisplay{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ggggggg{
+    display: flex;
+    flex-direction: column;
+}
+
+.TotalContainer{
+    display: flex;
+    width: 25%;
+    place-self: end;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: rgb(54, 54, 54);
+    cursor: alias;
+    position: relative;
+    margin-top: -15px;
+}
+.TotalContainer::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    background-color: black;
+}
+.Tot{
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    border: none;
+    background-color: goldenrod;
+    cursor: pointer;
+}
+
+.TrashIcon{
+    display: flex;
+    place-self: end;
+    color: goldenrod;
+    cursor: pointer;
+}
+
+.Clearcart{
+    
+    color: goldenrod;
+    cursor: pointer;
+}
+.ccc{
+    font-weight: 900;
+    color: rgb(54, 54, 54);
+    cursor: pointer;
+}
+.ccc:hover, .TotalContainer p:hover{
+    color: black;
+}
+
+
+
+@media (max-width: 1000px) {
+.CartAdded{
+    flex-direction: column;
+}
+
+.ProductDisplay{
+    width: 85%;
+    padding: 0px;
+}
+.PaymentDetails{
+    width: 100%;
+}
+.OrderText .Box{
+    font-size: 0.8rem;
+}
+
+
+
+}
+
+@media (max-width: 600px) {
+    .ProductDisplay{
+        width: 100%;
+    }
+    .IMgDisplay img{
+        width: 60%;
+    }
+    .Foodtext{
+        font-size: 0.8rem;
+    }
+    .TotalContainer{
+        width: 50%;
+    }
+}

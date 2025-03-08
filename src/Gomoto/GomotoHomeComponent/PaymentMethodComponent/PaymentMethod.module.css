@@ -1,0 +1,34 @@
+.PaymentType{
+    width: 100%;
+ display: flex;
+ place-self: center;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ justify-content: space-between;
+
+
+}
+.PaymentDetails{
+    width: 100%;
+    position: sticky;
+    top: 0px;
+}
+
+.Paym{
+    color: goldenrod;
+    font-family: "Agdasima", serif;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.Link{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.Link.Active{
+    color: goldenrod;
+    font-weight: bolder;
+
+}
+

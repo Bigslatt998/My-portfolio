@@ -1,0 +1,289 @@
+.CartContainer{
+    background-image: url('../../assets/NightBurger.jpg');
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    color: white;
+    
+}
+.CartTRansParent{
+ 
+    width: 100%;
+    height: 100%;
+    background-color: color-mix(in srgb, black, transparent 50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+.Cart{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.Text{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    line-height: 0.5;
+}
+.CartPPP{
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.HomeXcart{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.HomeX{
+    color: goldenrod;
+}
+.HomeX:hover{
+    color: white;
+}
+.Lin{
+    height: 15px;
+    width: 1px;
+    background-color: white;
+}
+
+.EmptyCart{
+    height: fit-content;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.EmptyCart button{
+    cursor: pointer;
+}
+.DIsplay{
+    background-color: rgb(206, 206, 206);
+    height: 40px;
+    padding: 20px;
+    padding-inline: 25px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* z-index: 3; */
+    overflow: hidden;
+}
+
+.DIsplay::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    left: 0;
+    top: -20px;
+    /* border-radius: 15px; */
+    /* z-index: 2; */
+    background-color: goldenrod;
+
+}
+.EmptyCart button{
+    height: 60px;
+    width: 200px;
+    border-radius: 50px;
+    border: none;
+    background-color: goldenrod;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.CartAdded{
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+}
+.ProductDisplay{
+    width: 50%;
+    padding: 20px;
+}
+.PaymentDetails{
+    width: 50%;
+}
+.CartProduct{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    /* justify-content: space-between; */
+}
+.CartProduct img{
+    width: 250px;
+}
+
+.OrderText{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+.Line{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+.Oeder{
+ display: flex;
+ flex-direction: column;
+}
+.Size{
+    display: flex;
+}
+.Img{
+    width: 100%;
+    /* display: flex; */
+}
+.IMgDisplay{
+    width: 80%;
+    display: flex;
+}
+.IMgDisplay img{
+    width: 70%;
+}
+
+.SelectSize select{
+    width: 80px;
+    border: none;
+}
+.Price{
+    width: 100%;
+    text-align: center;
+
+}
+.Quantity{
+    width: 100%;
+    text-align: center;
+
+}
+
+.Btn{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    place-content: center;
+}
+
+.Btn button{
+    cursor: pointer;
+}
+.TotalPrice{
+    width: 100%;
+    text-align: end;
+
+}
+.OrderDisplay{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.PaymentType{
+    width: 90%;
+ display: flex;
+ place-self: center;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ justify-content: space-between;
+
+}
+
+
+.Head{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.NUmberXname{
+    line-height: 0.5;
+}
+.ExpireXcvv{
+    display: flex;
+    width: 50%;
+    place-self: end;
+    line-height: 0.5;
+    justify-content: space-between;
+}
+.CVV{
+    display: flex;
+    justify-content: space-between;
+
+}
+.Cardinput form{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    gap: 10px;
+    appearance: none;
+}
+.Cardinput form input{
+    height: 40px;
+    padding-inline: 20px;
+}
+.Cardinput button{
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: goldenrod;
+    cursor: pointer;
+}
+
+.Addedtocart{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+
+
+@media (max-width: 1000px) {
+.CartAdded{
+    flex-direction: column;
+}
+
+.ProductDisplay{
+    width: 100%;
+    padding: 0px;
+}
+.PaymentDetails{
+    width: 100%;
+}
+.Cardinput form{
+  
+    width: 100%;
+  
+}
+.CVV{
+    width: 300px;
+}
+
+.CVV input{
+    width: 100px;
+}
+}
+
+@media (max-width: 600px) {
+    .CVV{
+        width: 300px;
+    }
+
+    .CVV input{
+        width: 100px;
+    }
+}

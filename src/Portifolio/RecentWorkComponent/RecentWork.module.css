@@ -1,0 +1,134 @@
+/* LIGHTMOOD */
+
+.Box.LightMood{
+    background-color: rgb(214, 212, 212);
+    color: rgb(0, 0, 0);
+}
+
+/* LIGHTMOOD */
+.RecentWorkContainter{
+    padding-inline: 30px;
+}
+
+
+.Container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    cursor: pointer;
+}
+.RecentWorkContainter .Container h1{
+    border-bottom: 5px solid gold;
+    width: fit-content;
+    line-height: 1.4;
+}
+.Myskills{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(2, 150px);
+    width: 100%;
+    /* background-color: red; */
+}
+.Myskillss{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(3, 150px);
+    width: 100%;
+    /* background-color: red; */
+}
+.Box{
+    border-radius: 10px;
+    background-color: rgb(95, 93, 93);
+    padding: 20px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+}
+.GameSliderWrap{
+    margin-bottom: 30px;
+}
+.Box img{
+    width: auto;
+}
+.Box div{
+    width: 350px;
+    font-size: 3rem;
+    font-family: "Agdasima", serif;
+
+}
+.Box p{
+    font-size: 3rem;
+    font-family: "Agdasima", serif;
+
+}
+.Netflix img{
+    width: 250px;
+}
+
+.Box img:hover, .Box span:hover{
+    transform: scale(1.1);
+}
+@media (max-width: 1000px){
+    .Myskills{
+        grid-template-rows: repeat(4, 150px);
+        /* background-color: red; */
+    }
+    .Myskills{
+        grid-template-rows: repeat(4, 150px);
+        /* background-color: red; */
+    }
+    .SliderWrap{
+        position: relative;
+        height: fit-content;
+        /* overflow: hidden; */
+        /* margin: auto; */
+
+    }
+    .SliderWrap button{
+        display: none;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .SliderWrap button:last-of-type{
+        /* right: 0; */
+        top: 90%;
+    }
+}
+
+@media (max-width: 1100px){
+    .Myskills{
+        grid-template-rows: repeat(4, 150px);
+        /* background-color: red; */
+    }
+
+    .Myskillss{
+        grid-template-rows: repeat(6, 150px);
+        /* background-color: red; */
+    }
+}
+
+
+@media (max-width: 798px){
+    .Myskills{
+        grid-template-rows: repeat(4, 150px);
+    }
+    .Myskillss{
+        grid-template-rows: repeat(6, 150px);
+    }
+}
+
+@media (max-width: 736px){
+    .Myskills{
+        grid-template-rows: repeat(4, 150px);
+    }
+
+    .Myskillss{
+        grid-template-rows: repeat(6, 150px);
+    }
+}

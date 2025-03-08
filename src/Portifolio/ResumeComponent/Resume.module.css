@@ -1,0 +1,159 @@
+.ResumeContainer{
+    padding-inline: 30px;
+}
+.ResumeContainer .Container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ResumeContainer .Container h1{
+    border-bottom: 5px solid gold;
+    width: fit-content;
+    line-height: 1.4;
+}
+
+.Details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+
+}
+.Icon{
+    /* display: flex; */
+    margin-top: 20px;
+    
+}
+.IIIIII{
+    display: inline-flex;
+
+}
+.IIIIII i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 30px;height: 30px;
+    /* background-color: rgb(39, 38, 38); */
+    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.5),
+                inset -2px -2px 5px rgba(0,0,0,0.5),
+                5px 5px 15px rgba(0,0,0,0.3) ;
+    z-index: 500;
+    color: gold;
+    margin-left: -7px;
+}
+.IIIIII span{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.Icon i{
+    margin-left: -3px;
+    position: relative;
+}
+.Icon i::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    border-radius: 25px;
+    z-index: 5;
+    /* background-color: gold; */
+}
+.Icon i::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 2px;
+    top: 1px;
+    border-radius: 25px;
+    z-index: 5;
+    background-color: rgb(235, 216, 108);
+}
+.Icon::before{
+    content: '';
+    position: absolute;
+    height: 270px;
+    width: 1px;
+    top: 10px;
+    left: 6px;
+    background-color: white;
+}
+.Edu .Text{
+    display: flex;
+    flex-direction: column;
+}
+
+.Experence{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.Experence .Icon{
+    /* display: flex; */
+    margin-top: 20px;
+    
+}
+.Experence .Icon i{
+    margin-left: -3px;
+    position: relative;
+}
+.Experence .Icon i::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    border-radius: 25px;
+    z-index: 5;
+    /* background-color: gold; */
+}
+.Experence .Icon i::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 2px;
+    top: 1px;
+    border-radius: 25px;
+    z-index: 5;
+    background-color: rgb(235, 216, 108);
+}
+.Experence .Icon::before{
+    content: '';
+    position: absolute;
+    height: 260px;
+    width: 1px;
+    top: 10px;
+    left: 6px;
+    background-color: white;
+}
+
+.Text{
+    margin-left: 35px;
+    display: flex;
+}
+
+@media (max-width: 600px){
+    .EducationDetatails{
+        padding-inline: 0px;
+        
+    }
+    .ExperenceDetatails{
+        padding-inline: 0px;
+        
+    }
+    /* .SchoolDetails{
+        line-height: 1px;
+    } */
+     .IIIIII .Icon{
+        width: 100%;
+     }
+     .Details{
+        font-size: .8rem;
+        line-height: 20px;
+     }
+}

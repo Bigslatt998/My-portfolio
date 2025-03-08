@@ -1,0 +1,207 @@
+.footer{
+    width: 100%;
+
+}
+.footer footer{
+    height: fit-content;
+    width: 100%;
+    background-color: #1e1f27;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    text-align: center;
+    color: white;
+    background-image: url('../../../assets/EarthBackGround.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.PPPPP{
+    width: 60%;
+    color: white;
+}
+.CallUs{
+    display: flex;
+    width: 90%;
+    height: 150px;
+    place-self: center;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+.hhhjjjkk{
+    width:100%;
+    text-align: center;
+}
+
+.Line{
+    width: 90%;
+    background-color: black;
+    height: 0.5px;
+    /* margin-top: 20px; */
+    place-self: center;
+}
+.img{
+    width: 50%;
+    height: 100%;
+    background-image: url('../../../assets/CustomerService.jpg');
+    border-radius: 25px 0px 0px 25px;
+    background-position: center -50px;
+    background-size: cover;
+    
+}
+.img img{
+    height: 100%;
+    width: fit-content;
+}
+.Text{
+    width: 50%;
+    height: 100%;
+    background-color: goldenrod;
+    border-radius: 0px 25px 25px 0px;
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.textCa{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    place-self: center;
+    justify-content: center;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    line-height: 0;
+}
+.textCa p:nth-child(1){
+    font-size: 1rem;
+}
+.textCa p:nth-child(2){
+    font-size: 2rem;
+}
+.Socials{
+    display: flex;
+    gap: 30px;
+    color: goldenrod;
+    cursor: pointer;
+}
+
+.Socials i:hover{
+    color: white;
+}
+.Code{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    color: goldenrod;
+    /* animation: Code 5s  linear  infinite; */
+    transition:  opacity 0.5 ease-in-out;
+}
+@keyframes Code {
+    0%{
+        opacity: 0.2;
+        color: red;
+    }
+    25%{
+        opacity: 0.5;
+        color: blue;
+    }
+    50%{
+        opacity: 0.3;
+        color: black;
+    }
+    75%{
+        opacity: 0.2;
+        color: black;
+    }
+    100%{
+        opacity: 1;
+        color: red;
+    }
+}
+
+.PhoneIcon{
+    position: absolute;
+    z-index: 2;
+    width: 120px;
+    height: 120px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: white; */
+    clip-path: circle();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.PhoneIcon i{
+    z-index: 10000;
+    font-size: 2.7rem;
+    color: goldenrod;
+}
+.PhoneIcon::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    clip-path: circle();
+    transition: all 0.3s ease;
+}
+
+.PhoneIcon::after{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(226, 224, 224);
+    clip-path: circle();
+    transition: all 0.3s ease;
+
+}
+.PhoneIcon:hover::before{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+/* .PhoneIcon::before:hover{
+    width: 100px;
+    height: 100px;
+    color: black;
+} */
+.PhoneIcon:hover i{
+    color: black;
+}
+
+@media (max-width: 1000px) {
+    .img{
+        display: none;
+    }
+    .Text{
+        width: 100%;
+        border-radius: 25px;
+    }
+    .PhoneIcon{
+        display: none;
+    }
+    .textCa{
+        width: 100%;
+        line-height: 0.01;
+        text-align: center;
+    }
+}

@@ -1,0 +1,274 @@
+/* Animation */
+.Box1 .Box:nth-child(1), 
+.Box1 .Box:nth-child(2),
+.Box1 .Box:nth-child(3){
+    animation: Slide cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+@keyframes Slide {
+    from{
+        opacity: 0;
+        scale: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+        scale: 1;
+    }
+}
+
+.Box3 .Box:nth-child(1), 
+.Box3 .Box:nth-child(2),
+.Box3 .Box:nth-child(3){
+    animation: SlideII cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+@keyframes SlideII {
+    from{
+        opacity: 0;
+        scale: 0;
+        transform: translateX(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+        scale: 1;
+    }
+}
+
+.Box2{
+
+    animation: Zoom cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+@keyframes Zoom {
+    from{
+        opacity: 0;
+        scale: 0;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+/* Animation */
+
+
+.WhychooseusContainer{
+    width: fit-content;
+    place-self: center;
+    padding: 20px;
+    /* width: 100vh; */
+    color: black;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    height: fit-content;
+    position: relative;
+}
+.Whychooseus{
+    width: 85%;
+    place-self: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: space-between;
+    /* width: 100vh; */
+    color: black;
+    font-size: 1.2rem;
+}
+.Text p:first-of-type{
+    color: aqua;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    place-self: center;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Text p:last-of-type{
+    font-size: 2rem;
+    font-weight: bolder;
+    place-self: center;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Container{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 40px;
+}
+.Box1{
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+
+.Box1 .Box, .Box3 .Box{
+    background-color: white;
+    height: fit-content;
+    width: 80%;
+    z-index: 5;
+    position: relative;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.5s ease,
+    color 0.5s ease, transform .5s ease-in-out;
+    cursor: pointer;
+}
+
+
+.Box1 .Box:hover, .Box3 .Box:hover{
+    transform: translateY(-5px);
+}
+
+.Box1 .Box p:nth-child(1), .Box3 .Box p:nth-child(1){
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.Box1 .Box p:nth-child(2), .Box3 .Box p:nth-child(2){
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.Box1 .Box:hover, .Box3 .Box:hover{
+    background-color: aqua;
+    color: rgb(255, 247, 247);
+}
+.Box1 .Box:hover .Icon::before, 
+.Box3 .Box:hover .Icon2::before{
+ background-color: white;
+ transition: background-color 0.5s ease;
+ 
+}
+.Box1 .Box:hover .Icon, 
+.Box3 .Box:hover .Icon2{
+    background-color: white;
+}
+
+.Com{
+    padding-inline: 30px;
+}
+
+
+.Icon{
+    position: absolute;
+    top: 0;
+    right: -25px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    place-content: center;
+    place-self: center;
+    font-size: 1rem;
+    width: 35px;
+    height: 40px;
+}
+.Icon::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    background-color: aqua;
+    left: -10px;
+    top: -20px;
+    z-index: -1;
+    border-radius: 0px 20px 0px 20px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Icon::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    background-color: rgb(5, 207, 207);
+    z-index: -55555;
+    left: -20px;
+    top: -20px;
+    border-radius: 20px 0px 0px 0px;
+
+}
+
+.Icon2{
+    position: absolute;
+    top: 0;
+    left: -25px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    place-content: center;
+    place-self: center;
+    font-size: 1rem;
+    width: 35px;
+    height: 40px;
+}
+.Icon2::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    background-color: aqua;
+    left: -5px;
+    top: -20px;
+    z-index: -1;
+    border-radius: 20px 0px 20px 0px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Icon2::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    background-color: rgb(5, 207, 207);
+    z-index: -55555;
+    left: 40px;
+    top: -20px;
+    border-radius: 0px 20px 0px 0px;
+
+}
+
+
+
+.Box3{
+    display: flex;
+    gap: 40px;
+    flex-direction: column; 
+}
+
+.Box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Box2 img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+@media (max-width: 1100px) {
+    .WhychooseusContainer{
+        width: 100%;
+    }
+    .Container{
+        flex-direction: column;
+    }
+}

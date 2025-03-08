@@ -1,0 +1,131 @@
+.StoryContainer{
+    width: 100%;
+   
+}
+.Containeeer{
+    width: 100%;
+    place-self: center;
+    padding: 20px;
+    /* display: flex; */
+    gap: 60px;
+    justify-content: space-between;
+    /* width: 100vh; */
+    color: black;
+    font-size: 1.2rem;
+    /* text-align: center; */
+}
+
+.TText p:first-of-type{
+    color: aqua;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    place-self: center;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.TText p:last-of-type{
+    font-size: 2rem;
+    font-weight: bolder;
+    place-self: center;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Contain{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    place-self: center;
+}
+.Img{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.Img:first-of-type,
+.Discussion .Text p:nth-child(3){
+    
+    animation: Slide cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+@keyframes Slide {
+    from{
+        opacity: 0;
+        scale: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+        scale: 1;
+    }
+}
+
+.Img:last-of-type,
+.Passport .Text p:nth-child(3) {
+    
+    animation: SlideRight cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+@keyframes SlideRight {
+    from{
+        opacity: 0;
+        scale: 0;
+        transform: translateX(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+        scale: 1;
+    }
+}
+
+.Img img{
+    width: 100%;
+    height: 100%;
+    transition: transform .5s ease-in-out;
+    border-radius: 5px;
+
+}
+.Img:hover img{
+    transform: scale(1.1) rotate(2deg);
+
+}
+.Discussion{
+    width: 45%;
+}
+.Discussion .Text p:nth-child(1), .Passport .Text p:nth-child(1){
+    color: aqua;
+    font-weight: bolder;
+}
+.Discussion .Text p:nth-child(2), .Passport .Text p:nth-child(2){
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+.Passport{
+    width: 45%;
+    /* margin-top: 80px; */
+}
+.Line{
+    height: inherit;
+    /* width: 1px; */
+    outline: dashed 1px aqua;
+    /* background-color: aqua; */
+}
+
+@media (max-width: 800px) {
+    .Contain{
+        flex-direction: column;
+    }
+    .Discussion{
+        width: 100%;
+    }
+    
+    .Passport{
+        width: 100%;
+        /* margin-top: 80px; */
+    }
+
+}

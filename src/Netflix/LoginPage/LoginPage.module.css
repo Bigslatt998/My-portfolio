@@ -1,0 +1,128 @@
+.Container{
+    background-color: black;
+    width: 100%;
+    height: 150vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    color: white;
+}
+.Login{
+    width: 100%;
+    height: 150vh;
+    background-image: url('../../assets/Img1.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+.LoginCover{
+    position: absolute;
+    width: 100%;
+    height: 150vh;
+    background-color: color-mix(in srgb, black, transparent 35%);
+    display: flex;
+    flex-direction: column;
+
+}
+.Login img{
+    width: 200px;
+    margin-left: 50px;
+}
+.LoginContainer{
+    width: fit-content;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    place-self: center;
+    gap: 10px;
+    background-color: color-mix(in srgb, black, transparent 50%);
+    margin-top: -35px;
+    padding: 40px;
+
+}
+.LoginContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* place-self: center;
+    justify-content: center; */
+    gap: 10px;
+}
+
+.LoginContent input{
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding-inline: 20px;
+    border-radius: 5px;
+    color: white;
+}
+.LoginContent input:focus{
+    outline: 2px solid rgb(202, 201, 201);
+    outline-offset: 1.5px;
+}
+.LoginContent button:first-of-type{
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(247, 37, 37);
+    color: rgb(247, 230, 199);
+}
+.LoginContent button:first-of-type:active{
+    background-color: rgb(224, 44, 44);
+}
+.LoginContent button:last-of-type{
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(58, 56, 56);
+    color: rgb(247, 230, 199);
+}
+.LoginContent button:last-of-type:active{
+    background-color: rgb(43, 41, 41);
+}
+.LoginContent p:nth-child(2), .LoginContent p:nth-child(4){
+    color: red;
+    text-align: left;
+    font-size: 0.6rem;
+
+}
+.LoginContent p:nth-child(6){
+    color: green;
+    font-size: 0.6rem;
+}
+.Username{
+    width: 100%;
+}
+.Username input{
+    width: 90%;
+}
+.Password{
+    position: relative;
+    width: 100%;
+}
+.Password input{
+    width: 90%;
+}
+.Password i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+.Remember span{
+    margin-left: 5px;
+}
+.Remember input{
+    color: white;
+}
+.Container a{
+    color: blue;
+}

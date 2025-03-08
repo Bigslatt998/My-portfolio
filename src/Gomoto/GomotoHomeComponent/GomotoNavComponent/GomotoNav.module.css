@@ -1,0 +1,205 @@
+.GomotoNav img{
+    width: 200px;
+}
+.GomotoNav nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    height: 80px;
+    position: relative;
+    color: white;
+}
+.Lin{
+    
+    width: 95%;
+    place-self: center;
+    height: 0.1px;
+    bottom: -20px;
+    background-color: #2e303a;
+}
+
+
+.Navigate{
+    display: flex;
+    /* position: relative; */
+}
+.Navigate ul{
+    position: relative;
+    display: flex;
+}
+.Navigate ul li{
+    list-style: none;
+    padding: 20px;
+}
+
+.CartIno{
+    display: flex;
+}
+.CartIno ul i{
+    color: whitesmoke;
+}
+.Cartt{
+    position: relative;
+    /* display: none; */
+}
+.Cartt:hover{
+    color: goldenrod;
+}
+.Cartt:hover .Carttt{
+    background-color: white;
+
+}
+.Carttt{
+    position: absolute;
+    width: 15px; height: 15px;
+    background-color: goldenrod;
+    border-radius: 50%;
+    right: -17px;
+    color: black;
+    font-weight: bolder;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .6rem;
+    top: 0;
+}
+
+.CartIno ul{
+    text-decoration: none; 
+    position: relative;
+    
+}
+.Srrrrr{
+    display: flex;
+    gap: 30px;
+    margin-right: 10px;
+}
+.CartIno{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 0px
+}
+.CartIno i{
+    margin-right: 10px;
+}
+.PhoneNumb{
+    color: gold;
+    font-weight: bolder;
+    /* margin-right: 10px; */
+    text-decoration: none;
+}
+.PhoneNumb:hover{
+    color: white;
+}
+.Input{
+    position: absolute;
+    right: -10px;
+    /* bottom: 50px; */
+    display: none;
+    /* transform: transilation; */
+    /* animation: fade 0.5s ease-in-out; */
+}
+.BarIcon{
+    /* display: none; */
+    font-weight: bolder;
+    color: white;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    cursor: pointer;
+}
+.BBar{
+    display: none;
+}
+.Bar{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.Bar:hover .Barline:nth-child(1), 
+.Bar:hover .Barline:nth-child(3){
+    width: 10px;
+    transition: width 0.3s ease;
+}
+.Barline{
+    width: 20px; height: 0px;
+    border: 1.5px solid white;
+    font-weight: bolder;
+    
+}
+.SearchIcon{
+    color: white;
+    font-weight: bolder;
+}
+.Show{
+    display: block;
+    position: absolute;
+    top: 8px;
+    animation: fade 1s ease-in-out;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.Input input{
+    width: 350px;
+    height: 50px;
+    border-radius: 25px;
+    padding-inline: 20px;
+}
+.Cancle{
+    position: absolute;
+    right: 18px;
+    top: 20px;
+    color: red;
+}
+.none{
+    display: none;
+}
+
+.CardAdded{
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    color: white;
+    position: fixed;
+    z-index: 50;
+    width: 300px; height: fit-content;
+    text-align: center;
+    background-color: rgb(248, 69, 69);
+}
+
+
+@media (max-width: 1100px) {
+    .CartIno ul{
+        display: none;
+        /* position: relative; */
+    }
+    .SearchIcon{
+        display: none;
+    }
+
+    .Navigate{
+        display: none;
+        flex-direction: column;
+    }
+    .BBar{
+        display: block;
+    }
+
+}
+
+@media(max-width: 600px){
+    .GomotoNav img{
+        width: 200px;
+    }
+    .Carttt{
+        top: 0;
+    }
+}
+

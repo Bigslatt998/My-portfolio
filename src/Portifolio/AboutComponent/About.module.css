@@ -1,0 +1,76 @@
+/* LIGHTMOOD */
+
+.Box.LightMood{
+    background-color: var(--LightMood);
+    color: rgb(0, 0, 0);
+}
+.ProgressBar.LightMood{
+    background-color: rgb(194, 191, 191);
+    color: rgb(0, 0, 0);
+}
+
+.ProgressContainer.LightMood{
+    background-color: rgb(150, 148, 148);
+}
+
+/* LIGHTMOOD */
+
+.AboutContainter{
+    padding-inline: 30px;
+}
+.AboutContainter .Container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.AboutContainter .Container h1{
+    border-bottom: 5px solid gold;
+    width: fit-content;
+    line-height: 1.4;
+}
+.AboutContainter .Contaner h1:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    background-color: gold;
+    height: 4px;
+    top: 120px;
+    /* bottom: ; */
+}
+.Myskills{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(2, auto);
+    width: 100%;
+    /* background-color: red; */
+}
+.Box{
+    border-radius: 10px;
+    padding: 20px;
+    /* background-color: rgb(95, 93, 93); */
+    line-height: 20px;
+}
+.ProgressContainer{
+    width: 80%;
+    background-color: rgb(65, 63, 63);
+
+
+
+    border-radius: 50px;
+}
+.Myskills{
+    margin-bottom: 30px;
+}
+.ProgressBar{
+    height: 20px;
+    border-radius: 50px;
+    background-color: rgb(107, 106, 106);
+    padding-inline: 10px;
+}
+@media (max-width: 1000px){
+    .Myskills{
+        grid-template-rows: repeat(4, auto);
+    }
+}

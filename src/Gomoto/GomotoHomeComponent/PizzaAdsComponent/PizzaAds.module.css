@@ -1,0 +1,142 @@
+.HotPizza{
+    display: flex;
+    background-color: rgb(240, 176, 16);
+    justify-content: center;
+    align-items: center;
+    height: 60vw;
+    overflow: hidden;
+}
+
+.PizzaImg{
+    width: 100%;
+    position: relative;
+}
+
+.PizzaImg img:nth-child(1){
+    position: absolute;
+    top: -20vw;
+    right: 70px;
+    width: 100%;
+}
+
+.PizzaImg img:nth-child(2){
+    width: 120%;
+    /* position: relative; */
+}
+
+.PizzaImg img:nth-child(3){
+    position: absolute;
+    top: -3%;
+    right: 50%;
+    animation: float 4s ease-in-out infinite;
+    /* transition: all  10s  ease; */
+}
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.PizzaImg img:nth-child(4){
+    position: absolute;
+    top: 23%;
+    right: 50%;
+    animation: float 3.5s ease-in-out infinite;
+    
+}
+.PizzaImg img:nth-child(5){
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    animation: float 2s ease-in-out infinite;
+    
+}
+
+
+/* .Leaves{
+    position: absolute;
+} */
+.PizzaText{
+    width: 100%;
+    padding: 20px;
+}
+.PizzaText h1{
+    font-family: "Oxanium", serif;
+    width: 100%;
+    font-size: 5.5rem;
+    /* padding: 20px; */
+}
+.Always{
+    color: whitesmoke;
+    font-weight: bolder;
+    
+}
+
+/* .CafeAndResturantContainer .Box{
+    background-color: red;
+} */
+
+
+.GetPizz{
+    width: 17rem; height: 4.2rem;
+    background: rgb(22, 22, 22);
+    border: none;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: bolder;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    color: white;
+    margin-top: 50px;
+    transition: color 1s ease-in-out;
+    cursor: pointer;
+}
+
+.GetPizz:hover{
+color: black;
+}
+.GetPizz::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 6rem;
+    background-color: white;
+    z-index: -1;
+    color: black;
+    transition:  .7s ease;
+}
+
+
+.GetPizz:hover::before{
+    width: 20rem;
+}
+
+
+@media (max-width: 1000px) {
+    .HotPizza{
+        padding: 30px;
+        flex-direction: column;
+        gap: 60px;
+        height: fit-content;
+    }
+    .PizzaText h1{
+        text-align: center;
+        font-size: 3rem;
+        /* padding: 20px; */
+    }
+    .PizzaText{
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+}
+

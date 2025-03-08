@@ -1,0 +1,341 @@
+.BrowseContainer{
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    color: white;
+}
+.Container{
+    width: 100%;
+    /* height: 100vh; */
+    place-self: center;
+    position: relative;
+}
+.Container video{
+    width: 100%;
+    height: fit-content;
+    place-self: center;
+}
+.Video{
+    width: 100%;
+    height: fit-content;
+}
+.Container li{
+    cursor: pointer;
+}
+
+.IMG img{
+    width: 150px;
+}
+.HeaderContainer{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    z-index: 99;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: inherit;
+    height: 80px;
+    background-color: transparent;
+
+}
+.Box1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Box1 nav ul{
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+.Box1 nav ul li{
+    padding: 10px;
+    list-style: none;
+}
+.Browse{
+    display: none;
+}
+
+.Box2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Box2 nav ul{
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    font-size: 1.3rem;
+}
+.Box2 nav ul li{
+    padding: 10px;
+    list-style: none;
+}
+.sticky{
+    background-color: black;
+}
+.DropDown{
+    position: absolute;
+    display: none;
+    
+    background-color: black;
+    top: 70px;
+    right: 50px;
+    width: 200px;
+    font-size: 1.1rem;
+    z-index: 15;
+    padding: 20px;
+    color: white;
+}
+.DropDown span{
+    position: absolute;
+    right: 0;
+    top: -14px;
+    right: 7px;
+}
+.DropDown div:hover, .BrowseDropDown div:hover{
+    text-decoration: underline;
+}
+.DropDown button{
+    display: flex;
+    place-self: center;
+}
+.Box2 nav ul li:nth-child(4):hover .DropDown{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.BrowseDropDown{
+    position: absolute;
+    display: none;
+    /* pointer-events: all; */
+    background-color: black;
+    top: 60px;
+    left: 70px;
+    width: 200px;
+    font-size: 1.1rem;
+    z-index: 15;
+    padding: 20px;
+    color: white;
+}
+.BrowseDropDown span{
+    position: absolute;
+    left: 15px;
+    top: -13px;
+    /* right: -7px; */
+}
+.Browse{
+    cursor: pointer;
+    font-size: .8rem;
+}
+.MovieInfo{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    place-self: center;
+    position: absolute;
+    top: 20%;
+    left: 25px;
+}
+.MovieInfo h1{
+    font-size: 4.5vw;
+}
+.MovieInfo p{
+    font-size: 2vw;
+}
+.MovieInfo h1 span{
+    margin-left: 50px;
+}
+.Plus{
+    position: absolute;
+    top: 70%;
+    right: 0;
+    background-color: color-mix(in srgb, rgb(20, 20, 20), transparent 50%);
+    width: 2%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-inline: 20px;
+}
+.Plus p{
+    margin-left: -10px;
+    font-size: 1.5vw;
+
+}
+.Plus::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: white;
+}
+.Plus span{
+    position: absolute;
+    left: -55%;
+    width: 40%;
+    height: 80%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+.buttons{
+    display: flex;
+    gap: 40px;
+}
+.buttons button{
+    padding: 10px 10px 10px 20px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.3vw;
+    /* color: black; */
+}
+.buttons button:first-of-type{
+    background-color: white;
+    color: black;
+}
+.buttons button:first-of-type span{
+    /* font-size: 1.8vw; */
+    margin-right: 5px;
+}
+.buttons button:last-of-type{
+    background-color: color-mix(in srgb, rgb(110, 109, 109), transparent 50%);
+    color: white;
+}
+.buttons button:last-of-type span{
+    /* font-size: 1.8vw; */
+    margin-right: 5px;
+
+}
+
+.MovieContainer{
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    place-self: end;
+    position: relative;
+}
+.MovieContainer section{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -100px;
+}
+.MovieContainer h2{
+    font-size: 1.3vw;
+}
+.SliderSection{
+    position: relative;
+
+}
+.Slider{
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    gap: 10px;
+    padding: 10px 0;
+    
+}
+.Slide{
+    flex: 0 0 auto;
+    width: 20%;
+    height: 150px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.Slide img{
+    width: 100%;
+    height: 100%;
+}
+.Slide:hover img{
+    transform: scale(1.1);
+}
+.Left{
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    transform: translate(-50%, 50%);
+}
+.Right{
+    position: absolute;
+    right: 0;
+    top: 40%;
+    transform: translate(-50%, 50%);
+}
+.SliderSection button{
+    height: 60px;
+    border-radius: 25px;
+    background-color: color-mix(in srgb, rgb(110, 109, 109), transparent 50%);
+
+}
+.SliderSection button:active{
+    height: 60px;
+    border-radius: 25px;
+    background-color: color-mix(in srgb, rgb(44, 43, 43), transparent 50%);
+
+}
+@media (max-width: 1200px) {
+    .Browse{
+        display: block;
+    }
+    .Nav{
+        display: none;
+        color: red;
+    }
+    .Browse:hover .BrowseDropDown{
+        display: block;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .Box2 ul li{
+        font-size: .8rem;
+    }
+    .IMG img{
+        width: 100px;
+    }
+    .MovieInfo{
+        z-index: 5;
+        position: absolute;
+        top: 20%;
+    }
+    .MovieInfo h1 span{
+        margin-left: 20px;
+    }
+    .MovieContainer section{
+        top: 0px;
+    }
+}
+@media (max-width: 900px) {
+   
+    .MovieInfo{
+        width: 70%;
+    }
+    /* .MovieInfo p{
+        font-size: .8rem;
+        margin-top: -20px;
+    } */
+    /* .buttons button{
+        font-size: 1rem;
+    
+    }
+    .buttons button span{
+        font-size: 1rem;
+    } */
+    
+}

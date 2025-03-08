@@ -1,0 +1,259 @@
+.Article{
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.ArticleContainer{
+    width: 85%;
+    place-self: center;
+    padding: 30px;
+    
+    justify-content: space-between;
+    color: black;
+    font-size: 1.2rem;
+}
+.Text p{
+    color: aqua;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    place-self: center;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Text h2{
+    font-size: 2rem;
+    font-weight: bolder;
+    place-self: center;
+    text-align: center;
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Image{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    'Box1 Box2'
+    'Box1 Box3';
+}
+.Box{
+    border-radius: 5px;
+    display: flex;
+    width: 100%;
+    background-color: rgb(231, 252, 245);
+    height: 100%;
+}
+.Box img{
+    height: 100%;
+}
+
+.Box:nth-child(1){
+    grid-area: Box1;
+    width: fit-content;
+    position: relative;
+    display:    flex;
+    flex-direction: column;
+}
+.Box:nth-child(1) img{
+    grid-area: Box1;
+    width: 100%;
+}
+
+.Box:nth-child(2){
+    grid-area: Box2;
+}
+.Box:nth-child(3){
+    grid-area: Box3;
+}
+.IMGText{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.buttt{
+    /* pointer-events: none; */
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    background-color: aqua;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    position: relative;
+    padding: 10px;
+    z-index: 1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: transform .5s ease-in-out;
+
+}
+.buttt:hover{
+    transform: translateY(-5px);
+}
+.buttt:before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: inherit;
+    left: 0%;
+    top: 0;
+    z-index: -1;
+    border-radius: 0px 5px 5px 0px;
+    transition: width .5s ease-in-out, 
+                background-color .5s ease-in-out;
+    overflow: hidden;
+}
+.buttt:hover:before{
+    background-color: black;
+    width: 50%;
+    left: 0%;
+    border-radius: 5px 0px 0px 5px;
+
+
+}
+.buttt:after{
+    content: '';
+    position: absolute;
+    /* background-color: red; */
+    width: 0%;
+    height: inherit;
+    right: 0;
+    top: 0;
+    border-radius: 10px 0px 0px 10px;
+    z-index: -1;
+    transition: width .5s ease-in-out, 
+                background-color .5s ease-in-out;
+}
+.buttt:hover:after{
+    background-color: black;
+    width: 50%;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.Application{
+    background-color: aqua;
+    width: fit-content;
+    place-self: center;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    /* width: 100vh; */
+    color: black;
+    font-size: 1.2rem;
+}
+.Application .Text{
+    width: 85%;
+    place-self: center;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.Application .Text h4{
+    font-size: 2.5rem;
+}
+
+.Box11{
+    width: 60%;
+
+}
+
+.Box11 p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.Box22{
+    width: 40%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+.Input{
+    width: 100%;
+    position: relative;
+}
+.Input input{
+    height: 65px;
+    width: 100%;
+    padding-inline: 10px;
+    outline: none;
+    border-radius: 5px;
+    
+}
+
+.Input button{
+    position: absolute;
+    right: -15px;
+    top: 10%;
+    border-radius: 5px;
+}
+
+.butt{
+    cursor: pointer;
+    height: 55px;
+    width: 150px;
+    background-color: aqua;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    position: relative;
+    padding: 10px;
+    place-self: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (max-width: 1200px) {
+.Image{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.Box{
+    flex-direction: row;
+}
+.Box:nth-child(2){
+    width: fit-content;
+    position: relative;
+    display:    flex;
+    flex-direction: column;
+}
+.Box:nth-child(2) img{
+    width: 100%;
+}
+.Box:nth-child(3){
+    width: fit-content;
+    position: relative;
+    display:    flex;
+    flex-direction: column;
+}
+.Box:nth-child(3) img{
+    width: 100%;
+}
+
+.Application .Text{
+    flex-direction: column;
+}
+
+.Box11{
+    width: 100%;
+
+}
+
+
+
+.Box22{
+    width: 100%;
+    padding: 0px;
+    
+}
+}
+
+@media (max-width: 600px) {
+    .Application .Text h4{
+        font-size: 2rem;
+        /* text-align: center; */
+    }
+}

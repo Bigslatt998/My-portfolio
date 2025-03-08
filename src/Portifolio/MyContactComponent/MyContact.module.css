@@ -1,0 +1,83 @@
+.MyContact{
+    padding-inline: 30px;
+}
+
+.Container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.MyContact .Container h1{
+    border-bottom: 5px solid gold;
+    width: fit-content;
+    line-height: 1.4;
+}
+.ContactInput div{
+    width: 100%;
+    height: 300px;
+    background-color: transparent;
+    resize: none;
+    border: 1px solid rgb(155, 153, 153);
+    border-radius: 20px;
+}
+.Container input{
+    background-color: transparent;
+    border: 1px solid rgb(155, 153, 153);
+    border-radius: 10px;
+}
+.TextInput{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+
+}
+.TextInput button{
+    width: 250px;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+}
+.TextInput button:hover{
+    border-radius: 0px;
+    background-color: rgb(39, 38, 38);
+}
+.Inputs{
+    display: flex;
+    justify-content: space-between;
+}
+.Inputs input{
+    width: 40%;
+    height: 45px;
+    padding-inline: 20px;
+    color: rgb(151, 150, 150);
+
+}
+.MessageINpt textarea{
+    height: 350px;
+    width: 95%;
+    border-radius: 10px;
+    background-color: transparent;
+    resize: none;
+    padding: 20px;
+    color: rgb(151, 150, 150);
+}
+
+
+.MessageINpt{
+    margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+    .Inputs{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .Inputs input{
+        width: 90%;
+    }
+}

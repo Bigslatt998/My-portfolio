@@ -1,0 +1,82 @@
+.Home:hover .HomeDropDown{
+    display: block;
+}
+.HomeDropDown{
+    position: absolute;
+    top: 65px;
+    left: -5%;
+    display: none;
+    border-radius: 25px;
+    background-color: white;
+    
+}
+.Box{
+    
+    height: fit-content; width: 250px;
+    padding: 20px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.About:hover .AboutDropDown{
+    display: block;
+}
+.AboutDropDown{
+    position: absolute;
+    top: 65px;
+    left: 20%;
+    display: none;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.Catalog:hover .CatalogDropDown{
+    display: block;
+}
+.CatalogDropDown{
+    position: absolute;
+    top: 65px;
+    left: 40%;
+    display: none;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.Blog:hover .BlogDropDown{
+    display: block;
+}
+.BlogDropDown{
+    position: absolute;
+    top: 65px;
+    left: 60%;
+    display: none;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.Navigatttt ul span{
+    position: absolute;
+    top: 26px;
+    margin-left: 5px;
+    font-size: 10px;
+    color: gold;
+    font-weight: bolder;
+ }
+
+.Box:hover{
+    color: goldenrod;
+    width: 60%;
+    height: 80%;
+    background-color: goldenrod;
+    border-radius: 25px 25px 25px 0%;
+    color: white;
+}
+
+.Link{
+    text-decoration: none;
+    color: white;
+}
+.Link:hover{
+    color: goldenrod;
+}

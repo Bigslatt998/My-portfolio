@@ -1,0 +1,380 @@
+.GetMoreWithApp{
+    padding: 20px;
+     display: flex;
+     justify-content: space-between;
+     background-color: rgb(240, 233, 233) ;
+     height: fit-content;
+     gap: 50px;
+ }
+ .Textt{
+     width: 50%;
+ }
+ 
+ .Textt h1{
+     width: 60%;
+ }
+ .Textt h1 span{
+     color: gold;
+ }
+ .IMporance{
+     display: flex;
+     /* align-items: center; */
+     flex-direction: column;
+     gap: 20px;
+ }
+ 
+ .Importance{
+     display: flex;
+     /* align-items: center; */
+     flex-direction: column;
+     gap: 20px;
+ }
+ .Follow{
+     display: flex;
+     align-items: center;
+     font-weight: bolder;
+     
+ }
+ .Follow .Numb{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 40px;
+     height: 40px;
+     background-color: rgb(255, 255, 255);
+     margin-right: 10px;
+     border-radius: 50px;
+     position: relative;
+     z-index: 1;
+ }
+ 
+ .Follow .Numb::before{
+     content: '01';
+     position: absolute;
+     width: 28px;
+     height: 28px;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: gold;
+     margin-right: 10px;
+     border-radius: 50px;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+
+ .Order{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    
+}
+.Order .Numb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.Order .Numb::before{
+    content: '02';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gold;
+    margin-right: 10px;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.Notice{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    
+}
+.Notice .Numb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.Notice .Numb::before{
+    content: '03';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gold;
+    margin-right: 10px;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ 
+ .Img{
+    width: 50%;
+    position: relative;
+    /* overflow: hidden; */
+    z-index: 1;
+    
+}
+.Img img{
+    width: 85%;
+    /* margin-top: 200px; */
+    /* z-index: -1; */
+    /* position: absolute; */
+    /* top: -100px; */
+    /* margin-bottom: -80px; */
+}
+.Apps{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.Apple{
+    padding: 10px;
+    width: 130px; height: 30px;
+    background-color: black;
+    color: white;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Apps i{
+    font-size: 2.5rem;
+    color: white;
+}
+.Download{
+    line-height: 1;
+}
+.Download p span:nth-child(1){
+    font-size: 0.6rem;
+}
+.Download p span:nth-child(2){
+    font-size: 1.2rem;
+}
+.GooglePlay{
+    padding: 10px;
+    width: 160px; height: 30px;
+    background-color: black;
+    color: white;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.GooglePlay .Download p span:nth-child(1){
+    font-size: 0.5rem;
+}
+.GooglePlay .Download p span:nth-child(2){
+    font-size: 1.1rem;
+}
+.Subscribe{
+    display: flex;
+    /* justify-content: space-between; */
+    /* z-index: 10; */
+    height: fit-content;
+    background-color: goldenrod;
+    z-index: 100000;
+    overflow: hidden;
+    color: rgb(34, 34, 34);
+    margin-top: -25px;
+
+}
+.Newslater{
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.Newslater i{
+    font-size: 7rem;
+}
+
+.Offers{
+    line-height: 0.1;
+}
+.Offers p{
+    color: white;
+}
+.Input{
+    position: relative;
+    width: 50%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Input input{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    padding-inline: 20px;
+    border: none;
+}
+.InputBox{
+    width: 35vw; height: 55px;
+    position: relative;
+    display: flex;
+    
+}
+
+.Searrr{
+    width: 30%;
+    height: 57px;
+    border-radius: 50px;
+    position: absolute;
+    background-color: rgb(34, 34, 34);
+    /* top: 50%; */
+    right: 0%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -50px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border: none;
+    transition: color .9s ease,  background-color .5s ease   ;
+}
+
+.Searrr:hover{
+    background-color: white;
+    color: black;
+}
+
+
+@media (max-width: 1200px) {
+    .Offers h1{
+        line-height: 1;
+    }
+}
+@media (max-width: 1000px) {
+    .GetMoreWithApp{
+        flex-direction: column;
+        
+        
+    }
+    .IMporance{
+        justify-content: center;
+        align-items: center;
+    }
+    .Textt{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .Textt h1{
+        width: 100%;
+        text-align: center;
+    }
+    .Img{
+        place-self: center;
+    }
+    .Subscribe{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .Input{
+        width: 100%;
+        place-self: center;
+    }
+    .InputBox{
+        flex-direction: column;
+        height: 150px;
+        gap: 10px;
+        width: 60%;
+        place-self: center;
+    }
+    .InputBox input{
+        height: 80px;
+    }
+
+    
+    .Newslater{
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+    .Searrr{
+        place-self: start;
+        width: 105%;
+        height: 80px;
+        position: static;
+
+    }
+    .Apps{
+        justify-content: center;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+    .Offers h1{
+        width: 80%;
+        place-self: center;
+    }
+    
+}
+
+@media (max-width: 800px) {
+.Input{
+    width: 100%;
+    justify-content: start;
+    align-items: start;
+    justify-content: center;
+}
+.InputBox{
+    width: 100%;
+    padding: 15px;
+}
+.InputBox input{
+    width: 95%;
+    place-self: center;
+}
+.Searrr{
+    width: 50%;
+    place-self: center;
+}
+
+}

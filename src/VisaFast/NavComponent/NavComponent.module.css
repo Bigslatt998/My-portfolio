@@ -1,0 +1,165 @@
+
+.header{
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    z-index: 5555;
+    position: fixed;
+    padding: 20px;
+    color: white;
+}
+.header.sticky{
+    background-color: rgb(44, 44, 44);
+    z-index: 5555;
+}
+.Logo{
+    padding-inline: 10px;
+}
+.HeaderContent{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    place-self: center;
+    position: relative;
+
+}
+.header nav{
+    display: flex;
+}
+.header nav ul{
+    display: inline-flex;
+    gap: 20px;
+
+}
+.header nav ul li{
+    list-style: none;
+}
+
+.button{
+    height: 50px;
+    margin-left: 30px;
+    width: 200px;
+    background-color: aqua;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 1;
+    transition: transform .5s ease-in-out, color .5s ease-in-out;
+}
+
+.button:hover{
+    color: black;
+    transform: translateY(-5px);
+}
+.button:before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: inherit;
+    left: 0%;
+    top: 0;
+    z-index: -1;
+    border-radius: 0px 5px 5px 0px;
+    transition: width .5s ease-in-out, 
+                background-color .5s ease-in-out;
+    overflow: hidden;
+}
+.button:hover:before{
+    background-color: white;
+    width: 50%;
+    left: 0%;
+    border-radius: 5px 0px 0px 5px;
+
+
+}
+.button:after{
+    content: '';
+    position: absolute;
+    /* background-color: red; */
+    width: 0%;
+    height: inherit;
+    right: 0;
+    top: 0;
+    border-radius: 10px 0px 0px 10px;
+    z-index: -1;
+    transition: width .5s ease-in-out, 
+                background-color .5s ease-in-out;
+}
+.button:hover:after{
+    background-color: white;
+    width: 50%;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.Links:hover .ServicesDropDown{
+    display: block;
+}
+.Linkss:hover .ServicesDropDown2{
+    display: block;
+}
+.ServicesDropDown{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    position: absolute;
+    left: 35%;
+    top: 80%;
+    padding: 20px;
+    display: none;
+}
+.ServicesDropDown2{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    position: absolute;
+    padding: 20px;
+    left: 45%;
+    display: none;
+}
+.Bar{
+    display: none;
+}
+@media (max-width: 1100px) {
+    .Bar{
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        /* margin-right: 20px; */
+    }
+    .header nav{
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 40px;
+        background-color: rgb(44, 44, 44);
+        width: 250px;
+        height: 400px;
+        z-index: 9999;
+        border-radius: 5px;
+        padding: 20px;
+        flex-direction: column;
+    }
+    .header nav ul{
+        display: block;
+        padding: 0;
+        
+    }
+    .header nav ul li{
+        padding: 15px;
+        
+    }
+    .header nav.Show{
+        display: block;
+    }
+    
+    .button{
+        /* top: 300px; */
+        z-index: 99999;
+        position: absolute;
+        width: 75%;
+    }
+   
+}

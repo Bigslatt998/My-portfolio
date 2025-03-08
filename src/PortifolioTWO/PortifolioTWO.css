@@ -1,0 +1,573 @@
+.PortifolioContainer{
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 320px 320px fit-content 100px;
+     */
+
+     display: flex;
+     flex-direction: column;
+    background-color: #040013;
+    color: #D4D9FF;
+    transition: background-color 1s;
+    width: 100%;
+    height: 100%;
+    gap: 100px;
+    /* background-color: red; */
+}
+.HeaderContainer{
+    width: 100%;
+    padding: 20px;
+
+}
+.HeaderContainer header{
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 50px;
+    position: fixed;
+    z-index: 999;
+    color: #D4D9FF;
+    background-color: #040013;
+    box-shadow: 10px 10px 86px 2px rgb(51, 42, 42);
+    animation: gooo  10s infinite linear;
+    transition: background-color 1s;
+}
+.HeaderContainer nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.NavLink{
+    display: inline-flex;
+    padding: 20px 0px 20px 0px;
+}
+.HeaderContainer nav ul li{
+    padding: 20px;
+    list-style: none;
+}
+.Toggle{
+    display: none;
+}
+.Style{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    opacity: 0.7;
+    z-index: 1;
+}
+.Style2{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    opacity: 0.7;
+    z-index: 1;
+}
+.Style .Circle{
+    width: 25px; height: 25px;
+    background-color: rgb(235, 235, 50);
+    transform: rotate(45deg);
+    position: fixed;
+    clip-path: polygon(50% 0%, 100% 50%, 50%, 100%, 0% 50%);
+    animation: moveII  10s infinite linear;
+    
+}
+@keyframes moveII {
+    0%{
+        transform: rotate(0deg);
+        transform: translateX(0px);
+        background-color: red;
+    }
+    25%{
+        transform: rotate(180deg);
+        transform: translateX(-50px);
+        transform: rotate(180deg);
+        background-color: green;
+    }
+    50%{
+        
+        transform: rotate(360deg);
+        transform: translateX(-660px);
+        background-color: pink;
+    }
+}
+.Style2 .Triangle{
+    width: 25px; height: 25px;
+    background-color: rgb(235, 235, 50);
+    transform: rotate(45deg);
+    position: fixed;
+    clip-path: polygon(50% 0%, 100% 50%, 50%, 100%, 0% 50%);
+    animation: move  10s infinite linear;
+}
+
+@keyframes move {
+    0%{
+        transform: rotate(0deg);
+        transform: translateX(0px);
+        
+    }
+    25%{
+        transform: rotate(180deg);
+        transform: translateX(50px);
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(360deg);
+        transform: translateX(620px);
+        
+    }
+}
+.DateANDtime span:last-of-type{
+    margin-left: 20px;
+}
+.MainText{
+    display:flex;
+    flex-direction: column;
+    line-height: .5;
+    
+}
+.MainContainer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.IMG{
+    position: relative;
+    width: 250px; height: 250px;
+    background-color: #2a2d47;
+    border-radius: 100%;
+    border: 10px solid rgb(143, 238, 206);
+    box-shadow: 0px 0px 50px 0px aqua;
+    overflow: hidden;
+}
+.IMG img{
+    position: absolute;
+    left: 20px;
+    top: 60px;
+    width: 200px; height: 200px;
+    
+}
+
+.textani{
+    display: inline-flex;
+}
+.textani span{
+    opacity: 0;
+    animation: type 5s forwards infinite;
+}
+.textani span:nth-child(1){
+    animation-delay: 0s;
+}
+.textani span:nth-child(2){
+    animation-delay: 0.2s;
+}
+.textani span:nth-child(3){
+    animation-delay: 0.4s;
+}
+.textani span:nth-child(4){
+    animation-delay: 0.6s;
+}
+.textani span:nth-child(5){
+    animation-delay: 0.8s;
+}
+.textani span:nth-child(6){
+    animation-delay: 1s;
+}
+.textani span:nth-child(7){
+    animation-delay: 1.2s;
+}
+.textani span:nth-child(8){
+    animation-delay: 1.4s;
+}
+.textani span:nth-child(9){
+    animation-delay: 1.6s;
+}
+.textani span:nth-child(10){
+    animation-delay: 1.8s;
+}
+.textani span:nth-child(11){
+    animation-delay: 2s;
+}
+.textani span:nth-child(12){
+    animation-delay: 2.2s;
+}
+.textani span:nth-child(12){
+    animation-delay: 2.4s;
+}
+.textani span:nth-child(13){
+    animation-delay: 2.6s;
+}
+.textani span:nth-child(14){
+    animation-delay: 2.8s;
+}
+
+@keyframes type{
+    0%{
+        opacity: 0; transform: translateX(10px);
+    }
+    100%{
+        opacity: 5; transform: translateX(0px);
+    }
+}
+.Social{
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.Social li{
+    list-style: none;
+    display: flex;
+    width: 30px; height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: aqua;
+    cursor: pointer;
+    color: black;
+}
+.Social li a{
+    color: black;
+
+}
+.Social li:hover a{
+    color: whitesmoke;
+}
+
+.MainText button{
+    width: 120px;
+    height: 30px;
+    background-color: aqua;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0px 0px 10px 0px aqua;
+    margin-top: 30px;
+}
+.MainText button:hover{
+    border-radius: 0px;
+    
+}
+
+.AboutMeContainer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.me{
+    color: aqua;
+    text-align: center;
+}
+
+.AboutMeImg{
+    position: relative;
+    width: 250px; height: 250px;
+    background-color: #2a2d47;
+    border-radius: 100%;
+    border: 10px solid rgb(143, 238, 206);
+    box-shadow: 0px 0px 50px 0px aqua;
+    overflow: hidden;
+}
+.AboutMeImg img{
+    position: absolute;
+    left: 20px;
+    top: 75px;
+    width: 200px; height: 200px;
+    animation: bounce 5s infinite;
+}
+@keyframes bounce {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.AboutMeText{
+    width: 50%;
+}
+.AboutMeText button{
+    width: 120px;
+    height: 30px;
+    background-color: aqua;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0px 0px 10px 0px aqua;
+}
+.AboutMeText button:hover{
+    border-radius: 0px;
+    transform: skew(10deg);
+    background-color: #2a2d47;
+}
+.MyServices h1{
+    text-align: center;
+}
+.ServiceArticle{
+    width: 200px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    background-color: #040013;
+    box-shadow: 0px 0px 10px 0px aqua;
+}
+.ServiceArticle:hover .Box1Text{
+    animation: show 1s forwards;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+@keyframes show{
+    50%{
+        transform: translateY(-8rem);
+    }
+    100%{
+        transform: translateY(-5rem);
+    }
+}
+.ServiceArticle:hover{
+    animation: remove 1s forwards;
+}
+@keyframes remove{
+    to{
+        overflow: initial;
+    }
+}
+.ServiceArticle:not(:hover){
+    animation: ShowOverflow 2s forwards;
+}
+.ServiceArticle:not(:hover) .Box1Text{
+    animation: removeData 1s forwards;
+}
+
+@keyframes  removeData{
+    0%{
+        transform: translateY(-5rem);
+    }
+
+    50%{
+        transform: translateY(-8rem);
+    }
+    100%{
+        transform: translateY(.5rem);
+    }
+}
+@keyframes ShowOverflow{
+    0%{
+        overflow: initial;
+        pointer-events: none;
+    }
+    50%{
+        overflow: hidden;
+    }
+}
+.MyServicesContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    place-self: center;
+}
+.Box1Text{
+    width: 200px; height: fit-content;
+    text-align: center;
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px 10px 0px rgb(2, 37, 37);
+    background-color: #040013;
+    padding: 10px 0px 10px 0px;
+    position: absolute;
+    bottom: -8rem;
+    /* left: 0;
+    right: 0; */
+    margin-inline: auto;
+}
+.img{
+    place-self: center;
+
+}
+.img i{
+    font-size: 5rem;
+}
+.ContactContainer{
+    height: fit-content;
+}
+.container{
+    width: 80%;
+    display: flex;
+    place-self: center;
+}
+.ContactText{
+    width: 50%;
+}
+.ContactInput{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ContactInput input{
+    width: 100%; height: 35px;
+    padding: 20px;
+}
+.ContactInput input[type="text"]{
+    background-color: rgb(48, 47, 47);
+    border: none;
+    border-radius: 5px;
+}
+.ContactInput textarea{
+    width: 100%; height: 250px;
+    background-color: rgb(48, 47, 47);
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    resize: none;
+}
+.ContactInput button{
+    width: 100%;
+    height: 30px;
+    background-color: aqua;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0px 0px 10px 0px aqua;
+}
+
+.SocialII{
+    position: absolute;
+    top: 250px;
+    position: fixed;
+
+    right: 0;
+}
+.SocialII li{
+    list-style: none;
+    padding: 20px;
+}
+/* Media */
+@media (max-width: 800px) {
+    .PortifolioContainer{
+        
+        grid-template-rows: 50px 550px 650px fit-content 100px 100px;
+       
+    }
+    @keyframes move {
+        0%{
+            transform: rotate(0deg);
+            transform: translateX(0px);
+            
+        }
+        25%{
+            transform: rotate(180deg);
+            transform: translateX(50px);
+            transform: rotate(180deg);
+        }
+        50%{
+            transform: rotate(360deg);
+            transform: translateX(200px);
+            
+        }
+    }
+
+    @keyframes moveII {
+        0%{
+            transform: rotate(0deg);
+            transform: translateX(0px);
+            
+        }
+        25%{
+            transform: rotate(180deg);
+            transform: translateX(-50px);
+            transform: rotate(180deg);
+        }
+        50%{
+            transform: rotate(360deg);
+            transform: translateX(-200px);
+            
+        }
+    }
+    .MainContainer{
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .HeaderContainer nav ul{
+        display: none;
+    }
+    .Toggle{
+        display: block;
+    }
+    .Toggle i{
+        color: blue; 
+        /* margin-left: -50px; */
+        font-size: 30px;
+    }
+    .NavLink{
+        position: absolute;
+        top: 35px;
+        right: 0px;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        background: rgb(36, 36, 65);
+        transition: background-color 1s;
+    }
+    .NavLink.Open{
+        display: block;
+    }
+    .AboutMeContainer{
+        flex-direction: column-reverse;
+    }
+    .AboutMeText{
+        width: 100%;
+    }
+    .MainImg{
+        align-self: center;
+    }
+    .MainText ul{
+        
+        justify-content: center;
+    }
+
+    .AboutMeImg{
+        align-self: center;
+    }
+    .AboutMeText h1, .AboutMeText p{
+       text-align: center;
+    }
+    .AboutMeImg{
+        margin-top: 50px;
+    }
+    .Bton{
+        place-self: center;
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    .MyServicesContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 80px;
+        column-gap: 20px;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        place-self: center;
+    }
+    .container{
+        /* width: 100%; */
+        flex-direction: column;
+    }
+    .ContactText{
+        width: 100%;
+
+    }
+    .ContactInput{
+        width: 100%;
+    }
+}

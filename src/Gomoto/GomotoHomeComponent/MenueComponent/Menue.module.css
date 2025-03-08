@@ -1,0 +1,167 @@
+.CloseMenue{
+    position: absolute;
+    right: 10px;
+    font-size: 40px;
+    /* top: 20px; */
+    cursor: pointer;
+
+}
+.MenueOpen{
+    display: none;
+}
+.OOOOpen{
+    padding: 20px;
+    display: flex;
+    /* gap: 50px; */
+    flex-direction: column;
+    color: white;
+    font-weight: bolder;
+}
+
+ .QuestionBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.FAQContent li{
+    list-style: none;
+    padding: 10px;
+}
+
+.DropDoeeen{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.Header img{
+    color: black;
+}
+
+.AnswerBox ul li{
+     padding: 10px;
+     list-style: none;
+     font-size: 1.2rem;
+}
+
+.AnswerBox ul li:hover{
+    color: goldenrod;
+}
+.AnswerBox ul li::marker{
+    content: '-';
+    font-size: 1.5rem;
+}
+@media (max-width: 1200px) {
+    .MenueOpen{
+        display: block;
+        width: 100%; height: fit-content;
+        background-color: #1e1f27;
+        /* background-color: green; */
+        position: absolute;
+        color: black;
+        left: 0;
+        top: -20px;
+        z-index: 2;
+        animation: FromLeft  0.2s ease-in-out;
+    }
+    @keyframes FromLeft {
+        from{
+            transform: translateX(100%);
+        }
+        to{
+            transform: translateX(0);
+        }
+    }
+
+    .OOOOpen{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .Cartt{
+        display: flex;
+        place-self: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        gap: 20px;
+        cursor: pointer;
+    }
+    .Carttt{
+        font-size: .5rem;
+        width: 15px; height: 15px;
+        background-color: goldenrod;
+        border-radius: 50%;
+        color: black;
+        font-weight: bolder;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: .8rem;
+        position: absolute;
+        left: 20px;
+        top: -10px;
+
+    }
+    .Catt {
+        position: relative;
+
+    }
+    .Catt i:first-of-type:hover{
+        color: goldenrod;
+    }
+    .Catt:hover .Carttt{
+        background-color: white;
+    
+    }
+    .USerXcart{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .Inpt{
+        position: relative;
+        width: 100%;
+
+    }
+    .Inpt input{
+        height: 7vw;
+        border-radius: 50px;
+        border: none;
+        width: 100%;
+        padding-left: 20px;
+    }
+    .Inpt input::placeholder{
+        font-weight: bolder;
+    }
+    .Inpt span{
+        position: absolute;
+        right: -2%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+    }
+    .Contact li{
+        list-style: none;
+    }
+}
+
+@media (max-width: 600px){
+    .Cartt{
+        width: 80%;
+        font-size: 1.5rem;
+    }
+    .Inpt input{
+        height: 15vw;
+    }
+    .Carttt{
+        width: 23px;
+        height: 23px;
+    }
+    .QuestionBox p{
+        list-style: none;
+        line-height: 0.5;
+    }
+}

@@ -1,0 +1,416 @@
+.FirstpageContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    color: rgb(247, 230, 199);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.FirstpageContainer main{
+    width: 100%;
+    height: fit-content;
+    background-image: url('../../assets/Img1.jpeg');
+    /* background-position: center; */
+    background-size: cover;
+}
+.MainContainer{
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.75);
+}
+.MainContainer nav img{
+    width: 25%;
+    height: 130px;
+    margin-top: -20px;
+}
+.MainContainer nav{
+    width: 80%;
+    /* height: 70px; */
+    display: flex;
+    place-self: center;
+    justify-content: space-between;
+
+
+}
+.MainContainer nav button{
+    width: 80px; height: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(247, 37, 37);
+    color: rgb(247, 230, 199);
+
+}
+.MainContent{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    place-self: center;
+    justify-content: center;
+}
+.Content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    width: 70%;
+    height: fit-content;
+    margin-top: 7%;
+}
+.Text{
+    text-align: center;
+    place-self: center;
+    line-height: 4vw;
+}
+.Text h1{
+    font-size: 3rem;
+}
+.GetStarted{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.GetStarted p{
+    /* width: 110%; */
+    place-self: center;
+    font-size: 1.3rem;
+}
+.GetStarted input{
+    width: 30%;
+    height: 38px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 3px;
+    padding-inline: 10px;
+    border: 1px solid whitesmoke;
+    background-color: rgba(0,0,0,0.1);
+
+}
+
+.GetStarted input:focus{
+outline: 2px solid white;
+outline-offset: 1px;
+}
+.GetStarted button{
+    height: 40px;
+    width: fit-content;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    background-color: rgb(247, 37, 37);
+    color: rgb(247, 230, 199);
+
+}
+.GetStarted button span{
+    margin-left: 10px;
+}
+.FirstpageContainer section{
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.FirstpageContainer section::after{
+    content: '';
+    width: 50%;
+    /* background-color: green; */
+    position: absolute;
+    left: 50%; 
+    top: -20px;
+    z-index: 0;
+    transform: translate(-50%);
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    box-shadow: 10px 10px 100px 20px  blue;
+}
+.Options{
+    display: flex;
+    gap: 25px;
+}
+.Options select{
+    width: 110px; height: 40px;
+    background-color: rgb(19, 17, 17);
+    color: white;
+    border-radius: 3px;
+    padding-inline: 10px;
+}
+.sectionContainer{
+    /* background-color: red; */
+    width: 85%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    place-self: center;
+    margin-top: 30px;
+}
+.sectionContainer p{
+    font-size: 1.3rem;
+}
+.MovieContainer{
+    display: flex;
+    place-self: center;
+    overflow: hidden;
+    width: 80%;
+    gap: 20px;
+    position: relative;
+}
+.MoovieSlider{
+    position: relative;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+
+.MovieSection img{
+    width: 180px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.MovieSection:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+
+}
+.MovieSection{
+    position: relative;
+    transition: 0.5s ease;
+
+
+
+}
+.MovieContainer p{
+    position: absolute;
+    top: 20px;
+    font-size: 5rem;
+    left: -15px;
+    z-index: 22222;
+}
+
+.MovieContainer button:active{
+    background-color: rgb(0, 0, 0, 0.9);    
+}
+.MovieContainer button{
+    width: 20px;
+    height: 80px;
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0, 0.7);
+    border: none;    
+    color: white;
+}
+.MovieContainer button:first-of-type{
+    left: 0;
+    top: 30%;
+    position: absolute;
+    z-index: 2;
+
+}
+
+.MovieContainer button:last-of-type{
+    right: 0;
+    top: 30%;
+    position: absolute;
+
+}
+.added{
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    background-color: red;
+    width: 80%;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.Reason{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.ReasonsContent{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    place-content: center;
+   
+}
+.ReasonsSection{
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 200px;
+    flex-direction: column;
+    width: 30%;
+    height: 350px auto ;
+    /* max-height: 250px; */
+    background-color: blueviolet;
+    padding: 20px;
+    border-radius: 10px;
+}
+.FAQContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    place-self: center;
+    height: 100%;
+}
+.FAQContent{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.AnswerBox{
+    background-color: rgb(73, 72, 72);
+    width: 100%;height: 100%;
+    padding: 20px;
+
+}
+.QuestionBox{
+    width: 100%;height: 80px;
+    background-color: rgb(73, 72, 72);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+.MemberShip{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-self: center;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 100px;
+}
+.InputBTN{
+    width: 60%;
+    display: flex;
+    place-self: center;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.InputBTN input{
+    width: 60%;
+    height: 45px;
+    border-radius: 5px;
+    background-color: rgb(19, 17, 17);
+    color: white;
+    border-radius: 3px;
+    padding-inline: 10px;
+    border: 1px solid whitesmoke;
+
+}
+.InputBTN input:focus{
+    outline: 2px solid white;
+    outline-offset: 1px;
+}
+.InputBTN button{
+    height: 45px;
+    width: fit-content;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    background-color: rgb(247, 37, 37);
+    color: rgb(247, 230, 199);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 85%;
+    place-self: center;
+    margin-top: 80px;
+}
+footer a{
+    color: white;
+}
+.Footer ul li{
+    list-style: none;
+}
+.Footer ul li a{
+    color: white;
+}
+
+.FooterContainer{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+}
+
+@media (max-width: 800px){
+    .MainContainer nav{
+        width: 90%;
+    }
+    .MainContainer nav img{
+        width: 150px;
+        height: 100px;
+    }
+    .MainContainer nav button{
+        margin-top: 10px;
+    }
+    .Text h1{
+        font-size: 2rem;
+    }
+    .Content{
+        width: 90%;
+    }
+    .Options{
+        flex-direction: column;
+    }
+    .Options select{
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .GetStarted input{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .Text{
+        line-height: 8vw;
+    }
+    .MovieSection img{
+        width: 100px;
+        height: 150px;
+    }
+    .MovieContainer{
+        place-self: start;
+        width: 100%;
+    }
+    .added{
+        width: 60%;
+        font-size: 0.5rem;
+    }
+    .InputBTN{
+        width: 80%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-inline: 20px;
+    }
+    .InputBTN input{
+        width: 100%;
+    }
+    .MemberShip p{
+        text-align: center;
+    
+    }
+    
+}

@@ -1,0 +1,251 @@
+.SitAtHome{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.SitAtHomeImg{
+    width: 50%;
+    height: auto;
+    
+    position: relative;
+    animation: appear .5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+
+}
+.SitAtHomeImg img{
+    height: 100%;
+    width: 100%;
+
+    /* position: absolute; */
+}
+.SitAtHomeText{
+    padding: 60px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: whitesmoke;
+    /* align-items: center; */
+    background-color: #1e1f27;
+    animation: appear .5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+
+}
+.SitAtHome p:nth-child(1){
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.SitAtHome h3{
+    font-size: 2.5rem;
+    color: goldenrod;
+}
+.TText{
+    line-height: 20px;
+    
+}
+.IconsText{
+    display: flex;
+    justify-content: space-between;
+    /* flex-flow: wrap; */
+    gap: 10px;
+    
+
+}
+@keyframes apper {
+    from{
+        opacity: 0;
+        transform: translateY(150%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+
+    }
+}
+
+@keyframes appearII {
+    from{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+
+    }
+}
+
+@keyframes appearIII {
+    from{
+        opacity: 0;
+        transform: translateY(150%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+
+    }
+}
+
+@keyframes appearIIII {
+    from{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+
+    }
+}
+.IconsText .Box:nth-child(1){
+    animation: apper 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+.IconsText .Box:nth-child(2){
+    animation: appearII 2s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    /* animation-delay: 0s; */
+}
+.IconsText .Box:nth-child(3){
+    animation: appearIII 3s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    /* animation-delay: 0.6s; */
+
+}
+.IconsText .Box:nth-child(4){
+    animation: appearIIII 4s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    /* animation-delay: 0.9s; */
+
+}
+.IconsText .Box{
+    height: fit-content;
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    
+}
+.IconsText .Box i{
+    font-size: 3rem;
+    color: goldenrod;
+    transition: transform 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.IconsText .Box  i:hover {
+    transform: translateY(-15px);
+}
+
+.btnII{
+    width: 11rem; height: 4rem;
+    background: goldenrod;
+    border: none;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: bolder;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    /* place-self: center; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+.btnII::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 6rem;
+    background: white;
+    z-index: -1;
+    transition:  .7s ease;
+}
+
+.btnII:hover::before{
+    width: 20rem;
+}
+.btnII:hover{
+    color: black;
+}
+
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.4;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .IconsText .Box{
+        width: 45%;
+    }
+   
+
+    .SitAtHomeImg{
+        width: 100%;
+        
+    }
+    .SitAtHomeText{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 800px) {
+ 
+    .btnII{
+        place-self: center;
+    }
+    .IconsText .Box{
+        width: 45%;
+    }
+.SitAtHome{
+   
+    flex-direction: column;
+}
+.SitAtHomeText{
+    padding: 0;
+    text-align: center;
+}
+.IconsText{
+ flex-wrap: wrap;
+}
+
+}
+
+@media (max-width: 1000px) {
+.SitAtHomeImg{
+    display: none;
+}
+
+}
+@media (max-width: 600px) {
+    
+    
+}

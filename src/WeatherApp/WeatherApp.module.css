@@ -1,0 +1,249 @@
+:root{
+    --primaryColor: rgb(40, 40, 73);
+    --lightMood: white;
+    --lightMoogII: rgb(167, 164, 164);
+}
+
+.Weather.LightMood,
+.WeatherAside.LightMood,
+.Weathernav.LightMoodII{
+    background-color: var(--lightMood);
+    color: black;
+}
+.WeatherAside.LightMoodII,
+.WeatherSection.LightMoodII,
+.Weathermain.LightMoodII,
+.Weathernav input.LightMoodII,
+.WeatherAsideII.LightMoodII,
+.Weatherfooter.LightMoodII{
+background-color: var(--lightMoogII);
+color: black;
+}
+.Weather{
+width: 100%;
+padding: 20px;
+background-color: rgb(4, 4, 43);
+color: rgb(134, 131, 131);
+}
+.WeatherCOntainer{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 1.5fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    /* grid areas */
+    grid-template-areas:
+    'WeatherAside Weathernav Weathernav'
+    'WeatherAside Weathermain  WeatherAsideII'
+    'WeatherAside WeatherSection  WeatherAsideII'
+    'WeatherAside Weatherfooter WeatherAsideII'
+    ;
+    gap: 10px;
+    
+}
+
+.WeatherAside{
+    background-color: var(--primaryColor);
+    grid-area: WeatherAside;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    height: fit-content;
+    position: relative;
+    position: sticky;top: 0;
+
+}
+
+.navContent{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.Darkmood{
+    margin-left: 60px;
+}
+.WeatherIcon, .MapIcon, .SettingsIcon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 3px;
+}
+
+.Logo{
+    width: 40px; height: 40px;
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+}
+
+
+.Weathernav{
+    grid-area: Weathernav;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.Searchhh{
+    width: 60%;
+    position: relative;
+}
+.searchIcon{
+    position: absolute;
+    cursor: pointer;
+    top: 15%;
+    left: 0;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.Weathernav input{
+    width: 100%; height: 40px;
+    border-radius: 5px;
+    background-color: var(--primaryColor);
+    border: none;
+    padding-inline: 45px;
+    appearance: none;
+}
+
+.Weathermain{
+    background-color: var(--primaryColor);
+    grid-area: Weathermain;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 5px;
+
+}
+.CityDisplay{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.DateTime{
+    font-size: 10px;
+    width: 130px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.DateTime span{
+    display: inline-flex;
+    position: absolute;
+    animation: scroll 10s ease-in-out infinite;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(106%);
+    }
+    100%{
+        transform:  translateX(-100%);
+    }
+}
+.WeatherSection{
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+    grid-area: WeatherSection;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+.Cloudss{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+/* .Cloudss DIv::before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background-color: red;
+} */
+
+.WeatherAsideII{
+    background-color: var(--primaryColor);
+    grid-area: WeatherAsideII;
+    border-radius: 10px;
+    padding: 10px;
+    height: 100%;
+
+}
+
+.DaysForecast{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+}
+.DIv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Darkmood{
+    margin-left: 60px;
+}
+
+.Weatherfooter{
+    background-color: var(--primaryColor);
+    grid-area: Weatherfooter;
+    border-radius: 10px;
+
+}
+
+@media (max-width: 850px) {
+    .WeatherCOntainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 0.3fr 1fr auto 1fr;
+        /* gap: 30px; */
+        /* row-gap: 20px; */
+        grid-template-areas:
+        'WeatherAside WeatherAside WeatherAside' 
+        'Weathernav Weathernav Weathernav'
+        'Weathermain Weathermain Weathermain'
+        'WeatherSection WeatherSection WeatherSection'
+        'WeatherAsideII WeatherAsideII WeatherAsideII'
+        'Weatherfooter Weatherfooter Weatherfooter';
+        
+        /* height: auto; */
+    }
+    .WeatherAside{
+        padding: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        position: static;
+    }
+    .navContent{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0px;
+    }
+    .Weathernav input{
+        width: 100%; 
+    }
+    .Darkmood{
+        top: 0;
+    }
+    .Cloudss{
+        flex-direction: column;
+        
+    }
+    .Cloudss div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .Weatherfooter{
+        margin-top: 20px;
+    }
+    
+}

@@ -1,0 +1,340 @@
+.GomotoHomeContainer{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 50px;
+}
+.GomotoHome{
+    /* width: 100%; */
+    color: white;
+    height: 150vh;
+    background: #1e1f27;
+    border-radius: 0% 0% 50% 0%;
+    padding: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    background-position: 0px 200px;
+    background-image: url('../../assets/EarthBackGround.png');
+}
+
+
+.hhhhh{
+    display: flex;  
+}
+.Delivery img{
+    width: 55vw;
+    margin-left: -50px;
+    /* position: ; */
+}
+.Header{
+    font-size: 3vw;
+    line-height: 0.5;
+}
+.Text{
+    display: flex;
+    flex-direction: column;
+    /* gap: 60px; */
+    width: 45%;
+}
+.Text h1:last-child{
+    color: gold;
+}
+.Delivery{
+ width: 55%;
+ position: relative;
+}
+
+.btn{
+    width: 17rem; height: 4.2rem;
+    background: goldenrod;
+    border: none;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: bolder;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 50px;
+    color: black;
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 6rem;
+    background: white;
+    z-index: -1;
+    transition:  .7s ease;
+}
+
+.btn:hover::before{
+    width: 20rem;
+}
+
+
+
+
+.Testimonials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    place-self: center;
+    /* height: 100vh; */
+}
+
+.Testimonials p:nth-child(1){
+    color: goldenrod;
+    font-weight: bolder;
+    font-family: "Tiny5", serif;
+    /* line-height: -50px; */
+
+}
+.Line{
+    width: 50%;
+    background-color: black;
+    height: 0.5px;
+    margin-top: 20px;
+    place-self: center;
+    outline: 1px dashed black;
+}
+.Roll{
+    width: 30px;
+    height: 30px;
+    background-color: goldenrod;
+    animation: move  5s infinite ease-in-out;
+    transition: transform 5s;
+}
+@keyframes move {
+    0%{
+        
+        /* transform: ; */
+        transform: rotate(0deg) scale(1);
+    }
+    50%{
+        
+        /* transform: ; */
+        transform: rotate(180deg) scale(0.3);
+    }
+    100%{
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .hhhhh{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        text-align: center;
+    }
+    .GomotoHome{
+        height: fit-content;
+    }
+    .Text{
+        width: 80%;
+    }
+    .Text p{
+        width: 90%;
+
+        
+        place-self: center;
+    }
+    .Delivery img{
+        width: 65vw;
+        place-self: center;
+        
+    }
+    .btn{
+        place-self: center;
+    }
+    .Foodtype{
+        gap: 10px;
+        margin-top: 0;
+    }
+    .Foodtype .Box{
+        width: 45%;
+    }
+
+    .IconsText .Box{
+        width: 45%;
+    }
+    /* .SitAtHome{
+        flex-direction: column;
+    } */
+
+    .SitAtHomeImg{
+        width: 100%;
+        
+    }
+    .SitAtHomeText{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .Foodtype .Box{
+        width: 90%;
+    }
+
+    .IconsText .Box{
+        width: 45%;
+    }
+.SitAtHome{
+   
+    flex-direction: column;
+}
+.SitAtHomeText{
+    padding: 0;
+    text-align: center;
+}
+
+}
+
+@media (max-width: 1000px) {
+.SitAtHomeImg{
+    display: none;
+}
+
+}
+@media (max-width: 600px) {
+    /* .CafeAndResturantContainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 200px  200px 200px 200px;
+    
+        grid-template-areas: 
+        'Box1 '
+        'Box2 '
+        'Box3'
+        'Box4'
+        'Box5'
+        
+    ;
+    } */
+    
+}
+/* .GomotoHomeContainer{
+    background-color: white;
+    height: 500vh;
+    color: white;
+}
+.GomotoHome{
+    
+}
+.GomotoHomeContainer main{
+    background: #1e1f27;
+    border-radius: 0% 0% 50% 0%;
+    height: 70vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 200px;
+    background-image: url('../../assets/EarthBackGround.png');
+}
+.hhhhh{
+    display: flex;
+    margin-top: 5%;
+    padding: 20px;
+}
+.Delivery img{
+    width: 60vw;
+    position: absolute;
+    left: -150px;
+   
+}
+.Delivery{
+    width: 50%;
+    position: relative;
+}
+.Text{
+    width: 50%;
+    display: flex;
+    flex-direction: column; 
+}
+
+
+.Text h1{
+    font-size: 6vw;
+    
+}
+.Header{
+    line-height: 0.5;
+}
+.btn{
+    width: 17rem; height: 4.2rem;
+    background: goldenrod;
+    border: none;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: bolder;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 6rem;
+    background: white;
+    z-index: -1;
+    transition:  .7s ease;
+}
+
+.btn:hover::before{
+    width: 20rem;
+}
+
+@media (max-width: 1100px) {
+    .hhhhh{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        height: fit-content;
+
+    }
+ 
+    .GomotoHomeContainer main{
+        background-position: 0px 400px;
+        height: fit-content;
+    }     
+    .Text{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .btn{
+        margin-top: 20px;
+    }
+    .Delivery img{
+       
+        left: 0px;
+       
+    }
+} */

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Bebas+Neue&family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Concert+One&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Oxanium:wght@200..800&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+DK+Loopet:wght@100..400&family=Road+Rage&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&family=Satisfy&family=Smokum&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Style+Script&family=Tiny5&family=Waterfall&display=swap');
+:root{
+  --LightMood: rgb(230, 226, 226);
+
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  background-color: white;
+  color: black;
+  overflow-x: hidden;
+  cursor:default ;
+
+}
+
+a{
+  color: rgb(172, 170, 170);
+  text-decoration: none;
+}
+
+input{
+  color: black;
+  background-color: white;
+  border: none;
+}
+button{
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

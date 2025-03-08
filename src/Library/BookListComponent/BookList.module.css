@@ -1,0 +1,24 @@
+.Box{
+    /* width: fit-content; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: rgb(104, 103, 103);
+}
+.Box img{
+    width: 100%;
+    height: 250px;
+    border-radius: 0px 0px 5px 5px;
+
+}
+.BookList{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+
+    gap: 10px;
+    
+}
+.Text{
+    height:250px ;
+}

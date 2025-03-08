@@ -1,0 +1,61 @@
+.PopularFood nav ul{
+    display: flex;
+    
+}
+.PopularFood nav ul li{
+    padding: 20px;
+    list-style: none;
+    animation: appear .5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.PopularFood ul .Lik.Active{
+    color: goldenrod;
+}
+.PopularFood ul .Lik{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-style: oblique;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.PopularFood ul .Lik:hover{
+    color: rgb(43, 42, 42);
+    
+    
+}
+
+
+.PopularFood {
+    
+    place-self: center;
+    text-align: center;
+}
+.PopularFood p{
+    font-family: "Tiny5", serif;
+    color: goldenrod;
+    font-size: 1.5rem;
+}
+.PopularFood h2{
+    color: black;
+    font-weight: bolder;
+    font-family: "Style Script", serif;
+    font-size: 3rem;
+    animation: appear .5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.4;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}

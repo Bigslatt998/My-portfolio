@@ -1,0 +1,145 @@
+.TestimonialContainer{
+    width: 100%;
+}
+.TContainer{
+    width: 85%;
+    place-self: center;
+    padding: 20px;
+    display: flex;
+    gap: 60px;
+    place-self: center;
+    justify-content: space-between;
+    /* width: 100vh; */
+    color: black;
+    font-size: 1.2rem;
+    /* text-align: center; */
+}
+.Boxx1{
+    width: 40%;
+}
+.Boxx1 p:nth-child(1){
+    font-size: 1.5rem;
+    color: aqua;
+    font-weight: bolder;
+    text-align: center;
+
+}
+.Boxx1 p:nth-child(2){
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+
+.butt{
+    cursor: pointer;
+    height: 60px;
+    width: fit-content;
+    background-color: aqua;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    position: relative;
+    padding: 10px;
+    place-self: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: transform .5s ease-in-out, color .5s ease-in-out;
+
+}
+.butt:hover{
+    transform: translateY(-5px);
+}
+.butt:before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: inherit;
+    left: 0%;
+    top: 0;
+    z-index: -1;
+    border-radius: 0px 5px 5px 0px;
+    transition: width .5s ease-in-out, 
+                background-color .5s ease-in-out;
+    overflow: hidden;
+}
+.butt:hover:before{
+    background-color: black;
+    width: 50%;
+    left: 0%;
+    border-radius: 5px 0px 0px 5px;
+
+
+}
+.butt:after{
+    content: '';
+    position: absolute;
+    /* background-color: red; */
+    width: 0%;
+    height: inherit;
+    right: 0;
+    top: 0;
+    border-radius: 10px 0px 0px 10px;
+    z-index: -1;
+    transition: width .5s ease-in-out, 
+                background-color .5s ease-in-out;
+}
+.butt:hover:after{
+    background-color: black;
+    width: 50%;
+    border-radius: 0px 5px 5px 0px;
+}
+.Boxx2{
+    width: 60%;
+    overflow: hidden;
+}
+
+.SLider{
+    height: 100%;
+    display: flex;
+    width: 1350px;
+    justify-content: space-between;
+}
+.Stars{
+    display: flex;
+    gap: 5px;
+    color: aqua;
+}
+.Stars i{
+    overflow: hidden;
+}
+.Box{
+    width: 280px;
+    height: inherit;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.Navigate{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    gap: 30px;
+    left: 50%;
+    margin-top: 30px;
+    transform: translate(50%, 50%);
+}
+.Navigate button{
+    width: 100%;
+    height: 30px;
+    /* border-radius: 100px; */
+    clip-path: circle();
+    color: black;
+    background-color: whitesmoke;
+}
+
+@media (max-width: 900px) {
+.TContainer{
+    flex-direction: column;
+    /* width: 100%; */
+}
+.Boxx2, .Boxx1{
+    width: 100%;
+}
+}

@@ -1,0 +1,102 @@
+.FastFood{
+    width: 100%;
+}
+.FastFoodWapper{
+    display: flex;
+    place-self: center;
+    overflow: hidden;
+    width: 100%;
+    gap: 20px;
+    position: relative;
+}
+.FastFoodSlider{
+    position: relative;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+
+}
+.Boxes{
+    padding: 10px;
+    background-color: pink;
+    width: 260px;
+    height: 300px;
+}
+.Boxes:hover{
+    transform: scale(1.1);
+}
+
+
+.LeftXright{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    gap: 50px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.Next{
+    position: relative;
+    font-size: 1.1rem;
+    /* right: 20px; */
+    /* bottom: 10px; */
+    z-index: 2;
+    /* top: 10; */
+    cursor: pointer;
+    
+}
+
+.Next::before{
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: goldenrod;
+    border-radius: 25px;
+    right: 2px;
+    top: 0px;
+    z-index: -1;
+}
+
+
+.Next:hover::before{
+    top: 5px;
+    right: 7px;
+    color: aqua;
+    width: 15px;
+    height: 15px;
+}
+
+.Prev{
+    position: relative;
+    font-size: 1.1rem;
+    /* right: 20px; */
+    /* bottom: 10px; */
+    z-index: 2;
+    /* top: 10; */
+    cursor: pointer;
+    
+}
+
+.Prev::before{
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: goldenrod;
+    border-radius: 25px;
+    right: -10px;
+    top: 0px;
+    z-index: -1;
+}
+
+
+.Prev:hover::before{
+    top: 5px;
+    right: -10px;
+    color: aqua;
+    width: 15px;
+    height: 15px;
+}

@@ -1,0 +1,295 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Concert+One&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Oxanium:wght@200..800&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+DK+Loopet:wght@100..400&family=Road+Rage&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&family=Satisfy&family=Smokum&family=Style+Script&family=Tiny5&family=Waterfall&display=swap');
+.Recommendation{
+    text-align: center;
+    line-height: 5px;
+}
+.Recommendation p{
+    color: goldenrod;
+    font-weight: bolder;
+    font-family: "Tiny5", serif;
+    font-size: 1.5rem;
+
+}
+.CafeAndResturantContainer{
+    font-family: "Tiny5", serif;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-rows:repeat(2, auto);
+    row-gap: 20px;
+    align-items: center;
+    column-gap: 30px;
+    grid-template-areas: 
+        'Box1 Box2 Box3'
+        'Box1 Box4 Box5'
+        
+    ;
+}
+.CafeAndResturantContainer .Box{
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.CafeAndResturantContainer .Box img{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    border-radius: 20px 20px 0px 0px;
+}
+.CafeAndResturantContainer .Box:hover img{
+    transform: scale(1.05);
+    overflow: hidden;
+}
+
+.CafeAndResturantContainer .Box1 h1{
+    font-size: 3rem;
+    font-family: "Style Script", serif;
+}
+
+.CafeAndResturantContainer .Box h1{
+  font-family: "Agdasima", serif;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
+
+}
+.CafeAndResturantContainer .Box:nth-child(1){
+    background-color: rgb(211, 208, 208);
+    grid-area: Box1;
+    height: fit-content;
+    animation: appear .5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+.CafeAndResturantContainer .Box:nth-child(2){
+    background-color: rgb(211, 208, 208);
+    grid-area: Box2;
+    height: fit-content;
+    animation: appear .5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+.CafeAndResturantContainer .Box:nth-child(3){
+    background-color: rgb(211, 208, 208);
+    grid-area: Box3;
+    height: fit-content;
+    animation: appear .5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+.CafeAndResturantContainer .Box:nth-child(4){
+    background-color: rgb(211, 208, 208);
+    grid-area: Box4;
+    height: fit-content;
+    animation: appear .5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+.CafeAndResturantContainer .Box:nth-child(5){
+    background-color: rgb(211, 208, 208);
+    grid-area: Box5;
+    height: fit-content;
+    animation: appear .5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.4;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.CafeAndResturant h4{
+    font-size: 3rem;
+    font-family: "Satisfy", serif;
+}
+.CafeAndResturantContainer .Box .Text{
+    padding: 25px;
+}
+
+.Spannn{
+    color: rgb(34, 34, 34);
+}
+
+.ViewMore{
+    width: 20rem; height: 4rem;
+    background: goldenrod;
+    border: none;
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    place-self: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    transition: color 1s ease-in-out;
+    cursor: pointer;
+}
+.ViewMore:hover{
+    color: white;
+}
+.ViewMore::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 6rem;
+    background-color: black;
+    z-index: -1;
+    color: black;
+    transition:  .7s ease;
+}
+
+.ViewMore:hover::before{
+    width: 20rem;
+    color: black;
+}
+
+.Dish{
+    position: absolute;
+    z-index: 50;
+    padding: 15px;
+    border-radius: 25px;
+    width: fit-content;
+    height: 5px;
+    top: 30px;
+    margin-left: 30px;
+    background-color: goldenrod;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Arrow{
+    position: absolute;
+    font-size: 1.1rem;
+    right: 20px;
+    /* bottom: 10px; */
+    z-index: 2;
+    top: 10;
+    cursor: pointer;
+    
+}
+
+.Arrow::before{
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: goldenrod;
+    border-radius: 25px;
+    right: 2px;
+    top: -3px;
+    z-index: -1;
+}
+
+
+.Arrow:hover::before{
+    top: 2px;
+    right: 7px;
+    color: aqua;
+    width: 15px;
+    height: 15px;
+}
+
+
+
+
+@media (max-width: 1000px) {
+    
+    .IconsText .Box{
+        width: 45%;
+    }
+    /* .SitAtHome{
+        flex-direction: column;
+    } */
+
+    .SitAtHomeImg{
+        width: 100%;
+        
+    }
+    .SitAtHomeText{
+        width: 100%;
+        height: auto;
+    }
+.CafeAndResturantContainer{
+    grid-template-columns:0.5fr 0.5fr;
+    grid-template-rows: repeat(2, auto);
+
+    grid-template-areas: 
+    'Box1 Box1'
+    'Box2 Box3'
+    'Box4 Box5'
+    
+;
+}
+}
+
+@media (max-width: 800px) {
+    .Foodtype .Box{
+        width: 90%;
+    }
+
+    .IconsText .Box{
+        width: 45%;
+    }
+.SitAtHome{
+   
+    flex-direction: column;
+}
+.SitAtHomeText{
+    padding: 0;
+    text-align: center;
+}
+.ViewMore{
+    width: 40%;
+    place-self: center;
+}
+
+}
+
+@media (max-width: 1000px) {
+.SitAtHomeImg{
+    display: none;
+}
+
+}
+@media (max-width: 600px) {
+    .CafeAndResturantContainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+    
+        grid-template-areas: 
+        'Box1 '
+        'Box2 '
+        'Box3'
+        'Box4'
+        'Box5'
+        
+    ;
+    }
+    .CafeAndResturant h4{
+        font-size: 2rem;
+    }
+}

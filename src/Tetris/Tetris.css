@@ -1,0 +1,90 @@
+.tetris {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .grid {
+    display: inline-block;
+    border: 2px solid #333;
+    background-color: #f9f9f9;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .cell.filled {
+    background-color: #007bff;
+  }
+  
+  .score {
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+  
+  .Buttons button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  .Buttons{
+    display: flex;
+    gap: 20px;
+    place-self: center;
+  }
+
+.DirectionBTN{
+    display: flex;
+    gap: 20px;
+    place-self: center;
+    position: relative;
+    margin-top: 30px;
+    display: none;
+}
+.DirectionBTN button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+.DirectionBTN button:nth-child(3){
+    position: absolute;
+    bottom: -70px;
+    left: 50px;
+}
+  
+.Buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  .game-over {
+    margin-top: 20px;
+    font-size: 2em;
+    color: red;
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 600px) {
+    .cell {
+      width: 15px;
+      height: 15px;
+    }
+    .DirectionBTN{
+        display: flex;
+        place-self: center;
+    }
+  }

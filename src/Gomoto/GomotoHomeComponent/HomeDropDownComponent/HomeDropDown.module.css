@@ -1,0 +1,8 @@
+.HomeContainer{
+    position: absolute;
+    width: 200px; height: 150px;
+    background-color: red;
+    top: 65px;
+    left: -5%;
+    display: none;
+}

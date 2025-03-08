@@ -1,0 +1,88 @@
+.CardContainer{
+    padding: 20px;
+}
+.card{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    place-self: center;
+    justify-content: space-between;
+    background-color: blue;
+    padding: 10px;
+}
+.Head{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.NUmberXname{
+    line-height: 0.5;
+}
+.ExpireXcvv{
+    display: flex;
+    width: 50%;
+    place-self: end;
+    line-height: 0.5;
+    justify-content: space-between;
+}
+.CVV{
+    display: flex;
+    justify-content: space-between;
+
+}
+.Cardinput form{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    gap: 10px;
+    appearance: none;
+}
+.Cardinput form input{
+    height: 40px;
+    padding-inline: 20px;
+}
+.Cardinput button{
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: goldenrod;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1000px) {
+.CartAdded{
+    flex-direction: column;
+}
+
+.ProductDisplay{
+    width: 100%;
+    padding: 0px;
+}
+.PaymentDetails{
+    width: 100%;
+}
+.Cardinput form{
+  
+    width: 100%;
+  
+}
+.CVV{
+    width: 300px;
+}
+
+.CVV input{
+    width: 100px;
+}
+}
+
+@media (max-width: 600px) {
+    .CVV{
+        width: 300px;
+    }
+
+    .CVV input{
+        width: 100px;
+    }
+}

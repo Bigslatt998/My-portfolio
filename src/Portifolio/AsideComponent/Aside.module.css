@@ -1,0 +1,135 @@
+/* LIGHTMOOD */
+
+.Image.LightMood,
+.Web.LightMood,
+.Content.LightMood{
+    background-color: rgb(214, 212, 212);
+    color: rgb(0, 0, 0);
+}
+
+/* LIGHTMOOD */
+
+.Profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.Image{
+    width: 100px; height: 100px;
+    background-color: rgb(95, 93, 93);
+    box-shadow: inset 0.5px 0.5px 2px rgba(255, 255, 255, 0.5),
+                inset -0.5px -0.5px 2px rgba(0,0,0,0.5),
+                7px 5px 0px rgba(0,0,0,0.3) ;
+    border-radius: 5px;
+}
+.Image img{
+    width: 100px; height: 100px;
+}
+.Text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+}
+.Profile p:first-of-type{
+    margin: 5px 0;
+}
+.Web{
+    width: fit-content;
+    height: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(104, 103, 103);
+    margin: 9px 0;
+    border-radius: 5px;
+    padding: 5px;
+}
+.Line{
+    width: 180px;
+    background-color: rgb(104, 103, 103);
+    height: 1px;
+    place-self: center;
+}
+.Content{
+    width: auto; height: 20px;
+    background-color: rgb(95, 93, 93);
+    box-shadow: inset 0.5px 0.5px 2px rgba(255, 255, 255, 0.5),
+                inset -0.5px -0.5px 2px rgba(0,0,0,0.5),
+                0px 2px 0px rgba(0,0,0,0.3) ;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+    .Details{
+        display: none;
+    }
+    
+
+}
+
+@media (max-width: 800px) {
+    
+    
+    aside{
+        position: static;
+        height: 100%;
+        align-items: flex-start;
+    transition: transform 0.3s ease, backgroung-color 0.3 ease;
+
+    }
+    .aside{
+        align-items: flex-start;
+    }
+    main{
+    transition: transform 0.3s ease, backgroung-color 0.3 ease;
+
+    }
+    .Text{
+        flex-direction: column;
+        margin-left: 20px;
+    
+    }
+    .Line{
+        display: none;
+    }
+    .Profile{
+        margin-top: 0;
+        padding: 10px;
+        flex-direction: row;
+    }
+    .Contact{
+        display: none;
+        position: absolute;
+        top: 22px;
+        right: 0;
+        height: auto;
+        z-index: 50;
+    }
+    .Contact.open{
+        display: flex;
+        background-color: rgb(95, 93, 93);
+        box-shadow: inset 0.5px 0.5px 2px rgba(255, 255, 255, 0.5),
+                    inset -0.5px -0.5px 2px rgba(0,0,0,0.5),
+                    7px 5px 0px rgba(0,0,0,0.3) ;
+        border-radius: 5px;
+        padding: 10px;
+        
+    }
+    .Content{
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 0.8rem;
+        text-align: center;
+        display: block;
+    }
+
+  
+}

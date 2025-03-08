@@ -1,0 +1,119 @@
+.FooterContainer{
+    width: 85%;
+    place-self: center;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 60px;
+    row-gap: 10px;
+    justify-content: space-between;
+    /* width: 100vh; */
+    color: black;
+    font-size: 1.2rem;
+    /* text-align: center; */
+}
+
+.Boxxx1{
+    width: 100%;
+}
+.Boxxx1 .Icon{
+    /* width: 60%; */
+    display: flex;
+    gap: 20px;
+}
+
+.Boxxx1 .Icon a{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    position: relative;
+    z-index: 8;
+    overflow: hidden;
+    color: black;
+    background-color: whitesmoke;
+}
+.Boxxx1 .Icon a .Ic{
+    font-size: 18px;
+    line-height: 30px;
+    z-index: 10;
+}
+
+.Boxxx1 .Icon i{
+    z-index: 1;
+}
+
+.Boxxx1 .Icon i::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    z-index: -1;
+    background-color: aqua;
+    pointer-events: none;
+    transition: top 0.5s ease-out;
+}
+
+.Boxxx1 .Icon i:hover::after{
+    top: 0;
+    transition: .5s ease-out;
+}
+
+.Boxxx2{
+    width: 100%;
+}
+.Boxxx2 li, .Boxxx3 li{
+    list-style: none;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Boxxx2 i, .Boxxx3 i{
+    color: aqua;
+    position: absolute;
+    left: -22px;
+    transition:  0.5s ease-in-out;
+    /* margin-right: 20px; */
+}
+
+.Boxxx2 li:hover i, .Boxxx3 li:hover i{
+    left: 0px;
+    transform: rotate(-25deg);
+    transition: 0.5s ease-in-out;
+}
+
+
+.Boxxx2 li:hover span, .Boxxx3 li:hover span{
+    margin-left: 20px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.Boxxx2 span .Boxxx3 span{
+    margin-left: 0px;
+    transition: .5s ease-in-out;
+
+}
+
+.Boxxx2 p, .Boxxx3 p, .Boxxx4 p:first-of-type{
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+
+.Boxxx3{
+    width: 100%;
+}
+
+.Boxxx4{
+    width: 100%;
+}
+.Boxxx4 i{
+    color: aquamarine;
+    margin-right: 20px;
+}

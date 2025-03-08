@@ -1,0 +1,181 @@
+/* LIGHTMOOD */
+
+.Contact.open.LightMood{
+    background-color: rgb(235, 231, 231);
+    color: rgb(34, 34, 34);
+}
+
+a.LightMood{
+    color: rgb(34, 34, 34);
+}
+
+/* LIGHTMOOD */
+
+.Contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border: none;
+    padding: 10px;
+    
+}
+
+.Contact .email{
+    display: flex;
+}
+.Contact .email .iconText{
+    line-height: 14px;
+    font-size: 0.8rem;
+}
+.Contact .email .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 30px;height: 30px;
+    /* background-color: rgb(39, 38, 38); */
+    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.5),
+                inset -2px -2px 5px rgba(0,0,0,0.5),
+                5px 5px 15px rgba(0,0,0,0.3) ;
+    /* color: white; */
+    margin-right: 5px;
+
+}
+.Contact .email .Text{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Contact .phone{
+    display: flex;
+}
+.Contact .phone .iconText{
+    line-height: 14px;
+    font-size: 0.8rem;
+}
+.Contact .phone .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 30px;height: 30px;
+    /* background-color: rgb(39, 38, 38);   */
+    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.5),
+                inset -2px -2px 5px rgba(0,0,0,0.5),
+                5px 5px 15px rgba(0,0,0,0.3) ;
+    /* color: white; */
+    margin-right: 5px;
+}
+.Contact .phone .Text{
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact .birthDate{
+    display: flex;
+ }
+ .Contact .birthDate .iconText{
+     line-height: 14px;
+     font-size: 0.8rem;
+ }
+ .Contact .birthDate .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+     width: 30px;height: 30px;
+     /* background-color: rgb(39, 38, 38); */
+     box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.5),
+                 inset -2px -2px 5px rgba(0,0,0,0.5),
+                 5px 5px 15px rgba(0,0,0,0.3) ;
+     /* color: white; */
+     margin-right: 5px;
+ 
+ }
+ .Contact .birthDate .Text{
+     display: flex;
+     flex-direction: column;
+ }
+
+
+
+
+ .Contact .location{
+    display: flex;
+ }
+ .Contact .location .iconText{
+     line-height: 14px;
+     font-size: 0.8rem;
+ }
+ .Contact .location .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+     width: 30px;height: 30px;
+     /* background-color: rgb(39, 38, 38); */
+     box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.5),
+                 inset -2px -2px 5px rgba(0,0,0,0.5),
+                 5px 5px 15px rgba(0,0,0,0.3) ;
+     /* color: white; */
+     margin-right: 5px;
+ 
+ }
+ .Contact .location .Text{
+     display: flex;
+     flex-direction: column;
+ }
+.Content{
+    width: auto; height: 20px;
+    /* background-color: rgb(95, 93, 93); */
+    box-shadow: inset 0.5px 0.5px 2px rgba(255, 255, 255, 0.5),
+                inset -0.5px -0.5px 2px rgba(0,0,0,0.5),
+                0px 2px 0px rgba(0,0,0,0.3) ;
+    border-radius: 5px;
+    text-align: center;
+    /* display: none; */
+}
+.Socials{
+    display: flex;
+    gap: 15px;
+    place-self: center;
+}
+.Socials i {
+    cursor: pointer;
+}
+.DarkMood{
+    position: absolute;
+    bottom: -5px;
+    right: 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .Contact{
+        display: none;
+        position: absolute;
+        top: 22px;
+        right: 0;
+        height: auto;
+        z-index: 50;
+        background-color: rgb(75, 73, 73);
+
+
+    }
+    .Contact.open{
+        display: flex;
+        /* background-color: rgb(95, 93, 93); */
+        box-shadow: inset 0.5px 0.5px 2px rgba(255, 255, 255, 0.5),
+                    inset -0.5px -0.5px 2px rgba(0,0,0,0.5),
+                    7px 5px 0px rgba(0,0,0,0.3) ;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .Contact.open .DarkMood{
+        bottom: 0px;
+        right: 5px;
+
+    }
+}

@@ -1,0 +1,223 @@
+/* Animation */
+.Box:nth-child(1), 
+.Box:nth-child(4), 
+.Box:nth-child(7){
+    animation: Slide cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+
+}
+
+@keyframes Slide {
+    from{
+        opacity: 0;
+        scale: 0;
+        transform: translateY(100%);
+
+    }
+    to{
+        opacity: 1;
+    transform: translateY(0%);
+
+        scale: 1;
+    }
+}
+.Box:nth-child(2), 
+.Box:nth-child(5),
+.Box:nth-child(8),
+.butt{
+    animation: SlideII cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+@keyframes SlideII {
+    from{
+        opacity: 0;
+        scale: 0;
+        transform: translateY(200%);
+
+    }
+    to{
+        opacity: 1;
+    transform: translateY(0%);
+
+        scale: 1;
+    }
+}
+
+.Box:nth-child(3), 
+.Box:nth-child(6),
+.Box:nth-child(9){
+    animation: SlideIII cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+@keyframes SlideIII {
+    from{
+        opacity: 0;
+        scale: 0;
+        transform: translateY(300%);
+
+    }
+    to{
+        opacity: 1;
+    transform: translateY(0%);
+
+        scale: 1;
+    }
+}
+/* Animation */
+
+
+.ContriesContainer{
+    width: 100%;
+    place-self: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: space-between;
+    /* width: 100vh; */
+    color: black;
+    font-size: 1.2rem;
+}
+.Containerrr{
+    width: 85%;
+    place-self: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: space-between;
+    /* width: 100vh; */
+    color: black;
+    font-size: 1.2rem;
+}
+.Text p:first-of-type{
+    color: aqua;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    place-self: center;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Text p:last-of-type{
+    font-size: 2rem;
+    font-weight: bolder;
+    place-self: center;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Contries{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, fit-content);
+    gap: 20px;
+    row-gap: 50px;
+    width: 100%;
+}
+
+
+.Box{
+    background-color: rgb(228, 225, 225);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition : transform 0.5s ease-in-out, background-color 0.5s ease-in-out ;
+}
+.Box:hover{
+    transform: translateY(-10px);
+    background-color: aqua;
+    
+}
+
+.Box:hover img{
+    animation: roll .5s linear;
+}
+@keyframes roll {
+    0%{
+        transform:  rotate(0);
+    }
+    100%{
+        transform:  rotate(360deg);
+    }
+}
+
+.butt{
+    cursor: pointer;
+    height: 60px;
+    width: 250px;
+    background-color: aqua;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    position: relative;
+    padding: 10px;
+    place-self: center;
+    transition: transform .5s ease-in-out, color .5s ease-in-out;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.butt:hover{
+    transform: translateY(-5px);
+}
+.butt:before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: inherit;
+    left: 0%;
+    top: 0;
+    z-index: -1;
+    border-radius: 0px 5px 5px 0px;
+    transition: width .5s ease-in-out, 
+                background-color .5s ease-in-out;
+    overflow: hidden;
+}
+.butt:hover:before{
+    background-color: black;
+    width: 50%;
+    left: 0%;
+    border-radius: 5px 0px 0px 5px;
+
+
+}
+.butt:after{
+    content: '';
+    position: absolute;
+    /* background-color: red; */
+    width: 0%;
+    height: inherit;
+    right: 0;
+    top: 0;
+    border-radius: 10px 0px 0px 10px;
+    z-index: -1;
+    transition: width .5s ease-in-out, 
+                background-color .5s ease-in-out;
+}
+.butt:hover:after{
+    background-color: black;
+    width: 50%;
+    border-radius: 0px 5px 5px 0px;
+}
+@media (max-width: 1000px) {
+    .Contries{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, fit-content);
+
+    }
+}
+
+@media (max-width: 600px) {
+    .Contries{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, fit-content);
+        gap: 20px;
+        row-gap: 20px;
+    }
+}

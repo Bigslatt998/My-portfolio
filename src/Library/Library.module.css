@@ -1,0 +1,48 @@
+.Library{
+    background-color: gray;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
+}
+.LibraryContainer{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: fit-content;
+    outline: 2px dashed black ;
+    padding: 20px;
+}
+
+.LibraryContainer input{
+    width: auto;
+    height: 40px;
+    background-color: rgb(82, 81, 81);
+    border: 1px solid black;
+    outline: none;
+    padding-inline: 20px;
+}
+
+.LibraryContainer input::placeholder{
+    color: black;
+}
+
+.SearchBTN{
+    /* width: initial; */
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    background-color: black;
+    outline: none;
+
+}
+.SearchBTN:active{
+    background-color: rgb(29, 29, 29);
+}
+
+.Search{
+    position: relative;
+}
