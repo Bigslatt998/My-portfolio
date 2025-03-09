@@ -1,9 +1,9 @@
 {
-  "name": "Portifolio",
+  "name": "portifolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Bigslatt998.github.io/Portfolio",
+  "homepage": "http://Bigslatt998.github.io/Portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
