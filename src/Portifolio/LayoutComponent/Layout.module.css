@@ -11,7 +11,8 @@
 
 .LayoutContainer{
     width: 100%;
-    padding: 30px;
+    padding: 20px 0px 0px 20px;
+    overflow: hidden;
     height: fit-content;
     background-color: rgb(39, 38, 38);
     color: rgb(172, 170, 170);
@@ -33,6 +34,7 @@
     height: 500px;
     position: sticky;
     top: 10px;
+    width: 92%;
 }
  .Aside{
     position: relative;
@@ -40,6 +42,7 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    width: inherit;
     /* padding: 20px; */
     
 }
@@ -52,12 +55,19 @@
     border-radius: 15px;
     height: fit-content;
     position: relative;
+    width: 92%;
 }
-
 @media (max-width: 800px) {
+    .LayoutContainer{
+        width: 100%;
+        padding: 20px 0px 0px 5px;
+    }
     .Container{
-        grid-template-rows: auto 1fr;
-        grid-template-columns: 1fr;
+        /* grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr; */
+        display: flex;
+        flex-direction: column;
+        
     }
     .AsideContainer{
         position: static;

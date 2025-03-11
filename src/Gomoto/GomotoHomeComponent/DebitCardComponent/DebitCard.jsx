@@ -2,14 +2,16 @@ import React, { useEffect, useState } from 'react'
 import Styles from './DebitCard.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle, faLock } from '@fortawesome/free-solid-svg-icons';
-import ReactInputMask from 'react-input-mask';
+import ReactInputMask from 'react-input-mask';import { Link, useNavigate } from 'react-router-dom';
+
 import { faCalendar, faCreditCard, faUser } from '@fortawesome/free-regular-svg-icons';
 const DebitCard = () => {
   const UserIcon = <FontAwesomeIcon icon={faUser}/>
   const CCIcon = <FontAwesomeIcon icon={faCreditCard}/>
   const CalenderIcon = <FontAwesomeIcon icon={faCalendar}/>
   const LockIcon = <FontAwesomeIcon icon={faLock}/>
-
+  const navigate = useNavigate()
+  
 
   
   // Card Number
@@ -43,6 +45,10 @@ const DebitCard = () => {
     const value = e.target.value
 
       setCVV(value)
+    }
+
+    const HandleHome = () => {
+      navigate('/GomotoHome')
     }
   return(
     <div className={Styles.CardContainer}>
@@ -99,7 +105,7 @@ const DebitCard = () => {
 
         </div>
 
-        <button>Checkout</button>
+        <button onClick={HandleHome}>Checkout</button>
 
       </form>
       </div>

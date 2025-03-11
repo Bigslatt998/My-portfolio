@@ -102,7 +102,7 @@ const TikTacToe = () => {
   }, [solved]);
 
   return (
-     <div className="app">
+     <div className="FlipContainer">
       <h1>Memory Card Game</h1>
       <div className="stats">
         <p>Moves: {moves}</p>
@@ -115,7 +115,7 @@ const TikTacToe = () => {
             className={`card ${card.flipped || solved.includes(index) ? 'flipped' : ''}`}
             onClick={() => handleCardClick(index)}
           >
-            {card.flipped || solved.includes(index) ? card.value : '?'}
+            {card.flipped || solved.includes(index) ? card.value : 'Flip'}
           </div>
         ))}
       </div>

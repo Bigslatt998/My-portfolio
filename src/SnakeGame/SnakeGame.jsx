@@ -2,10 +2,16 @@ import React, { useState, useEffect, useRef } from 'react'
 import Styles from './SnakeGame.module.css'
 
 const SnakeGame = () => {
+  const cardData = ['🍎', '🍌', '🍒', '🍇', '🍉', '🍓', '🍍', '🥝'];
+
     const GRID_SIZE = 20; // Size of each grid cell
     const BOARD_SIZE = 380; // Size of the game board
-    const INITIAL_SNAKE = [{ x: 5, y: 5 }]; // Initial snake position
-    const INITIAL_FOOD = { x: 10, y: 10 }; // Initial food position
+    const INITIAL_SNAKE = [{ x: 5, 
+                              y: 5 }]; // Initial snake position
+    const INITIAL_FOOD = { x: 10, 
+                          y: 10, 
+                          emoji: cardData[Math.floor(Math.random() * cardData.length)] 
+                          }; // Initial food position
     const INITIAL_SPEED = 200; // Initial speed (milliseconds per move)
 
 
@@ -94,12 +100,14 @@ const SnakeGame = () => {
 
       newSnake.unshift(head);
 
-      // Check if snake eats food
+      // if snake eats food
       if (head.x === food.x && head.y === food.y) {
         setScore((prevScore) => prevScore + 2);
         setFood({
           x: Math.floor(Math.random() * (BOARD_SIZE / GRID_SIZE)),
           y: Math.floor(Math.random() * (BOARD_SIZE / GRID_SIZE)),
+          emoji: cardData[Math.floor(Math.random() * cardData.length)] 
+
         });
       } else {
         newSnake.pop();
@@ -112,27 +120,19 @@ const SnakeGame = () => {
     return () => clearInterval(gameInterval);
   }, [snake, direction, food, gameOver, speed]);
 
+  // Increase speed by reducing the interval
   useEffect(() => {
     if (score === 10) {
-      setSpeed(100); // Increase speed by reducing the interval
+      setSpeed(100); 
     }
-  }, [score]);
-
-  useEffect(() => {
-    if (score === 20) {
-      setSpeed(80); // Increase speed by reducing the interval
+    else if (score === 20) {
+      setSpeed(80);
     }
-  }, [score]);
-
-  useEffect(() => {
-    if (score === 30) {
-      setSpeed(70); // Increase speed by reducing the interval
+    else  if (score === 30) {
+      setSpeed(70); 
     }
-  }, [score]);
-
-  useEffect(() => {
-    if (score === 50) {
-      setSpeed(50); // Increase speed by reducing the interval
+    else  if (score === 50) {
+      setSpeed(50);
     }
   }, [score]);
 
@@ -182,7 +182,7 @@ const SnakeGame = () => {
             width: GRID_SIZE,
             height: GRID_SIZE,
           }}
-        />
+        >{food.emoji}</div>
       </div>
       
 

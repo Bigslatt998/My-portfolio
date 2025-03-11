@@ -9,8 +9,8 @@ import RecentWork from './Portifolio/RecentWorkComponent/RecentWork'
 import MyContact from './Portifolio/MyContactComponent/MyContact'
 import Browse from './Netflix/BrowseMovie/Browse.jsx'
 import Login from './Netflix/LoginPage/LoginPage.jsx'
-  import FirstPage from './Netflix/FirstPage/FirstPage.jsx'
-  import WhosWatching from './Netflix/WhosWatching/WhosWatching.jsx'
+import FirstPage from './Netflix/FirstPage/FirstPage.jsx'
+import WhosWatching from './Netflix/WhosWatching/WhosWatching.jsx'
   
 // import WhosWatching from './Netflix/WhosWarchingComponent/WhosWatching'
 import GomotoHome from './Gomoto/GomotoHomeComponent/GomotoHome'
@@ -143,42 +143,6 @@ useEffect (() => {
   // Users
 
       const [selectedUser, setSelectedUser] = useState({User: 'Guest'})
-
-
-  // Empire
-  const [Khaddycart, setKhaddyCart] = useState([])
-  // const [warning, setwarning] = useState(false)
-
-  const KhaddyhandleClick = (item) => {
-    let isAdded = false
-    Khaddycart.forEach((prob) => {
-      if(item.id === prob.id)
-        isAdded = true
-    })
-    if(isAdded){
-      alert('Product already added to your cart')
-      return ;
-    }
-    setKhaddyCart([...Khaddycart , item])
-}
-const KhaddyHandleClearCart =() =>{
-  console.log('hi')
-  setKhaddyCart([])
-}
-
-const KhaddyhandleChange = (item, d) => {
-  let ind = -1
-  Khaddycart.forEach((data, index)=>{
-    if(data.id === item.id)
-      ind = index
-  })
-  const temp = Khaddycart
-  temp[ind].Amount += d;
-  if(temp[ind].Amount === 0)
-    temp[ind.Amount = 1]
-  setKhaddyCart([...temp])
-}
-
   return (
     <div className="App">
         <Router>
@@ -206,6 +170,7 @@ const KhaddyhandleChange = (item, d) => {
                   <Route path='/NeflixLogin' element={<Login/>}/>
                   <Route path='/WhosWatching' element={<WhosWatching Boxes={Boxes} setSelectedUser={setSelectedUser} SelectedUser={selectedUser}/>}/>
                   <Route path='/Browse' element={<Browse Boxes={Boxes} setSelectedUser={setSelectedUser} SelectedUser={selectedUser}/>}/>
+                  {/* NetFlix */}
 
                   {/* Gomoto Delivery */}
                   <Route path='/GomotoHome' element={<GomotoHome setIsMenu={setIsMenu} 
@@ -299,8 +264,6 @@ const KhaddyhandleChange = (item, d) => {
                                                 Warning={Warning}/>}/>
                   {/* Gomoto Delivery */}
 
-                 
-
             
                 {/* Visa Fast */}
             <Route path='/VisaFastHome' element={<VisaFastHome/>}/> 
@@ -309,6 +272,7 @@ const KhaddyhandleChange = (item, d) => {
 
                 {/* Second Portifolio */}
             <Route path='/PortifolioTWO' element={<PortifolioTWO/>}/> 
+                {/* Second Portifolio */}
 
                 {/* Ganes X Other */}
             <Route path='/Library' element={<Library/>}/>

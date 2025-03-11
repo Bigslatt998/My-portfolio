@@ -25,9 +25,10 @@
     gap: 20px;
 }
 .AboutContainter .Container h1{
-    border-bottom: 5px solid gold;
+    border-bottom: .5vw solid gold;
     width: fit-content;
     line-height: 1.4;
+    font-size: 3vw;
 }
 .AboutContainter .Contaner h1:before{
     content: '';
@@ -41,7 +42,7 @@
 .Myskills{
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     grid-template-rows: repeat(2, auto);
     width: 100%;
     /* background-color: red; */
@@ -52,6 +53,7 @@
     /* background-color: rgb(95, 93, 93); */
     line-height: 20px;
 }
+
 .ProgressContainer{
     width: 80%;
     background-color: rgb(65, 63, 63);

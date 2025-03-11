@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faMoon } from '@fortawesome/free-regular-svg-icons';
 import { faCss, faHtml5, faInstagram, faReact, faSquareJs, faSquareXTwitter, faTiktok, faTwitter, faWhatsapp, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
-import { faBars, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 import Half from '../assets/Half.png'
 import Full from '../assets/Full.png'
 
@@ -21,6 +21,7 @@ const PortifolioTWO = () => {
         const ReachIcon = <FontAwesomeIcon icon={faReact}/>
         const JSIcon = <FontAwesomeIcon icon={faSquareJs}/>
         const MailIcon = <FontAwesomeIcon icon={faEnvelope}/>
+        const PhoneIcon = <FontAwesomeIcon icon={faPhone}/>
 
         const [isMenu, setIsMenu] = useState(false)
         const HandleMenue =()=>{
@@ -49,6 +50,7 @@ const PortifolioTWO = () => {
         }
         
   return (
+    <div className="PContainer">
     <div className="PortifolioContainer">
         <div className="HeaderContainer">
             <header>
@@ -59,7 +61,7 @@ const PortifolioTWO = () => {
                 <ul className={`${'NavLink'} ${isMenu ? 'Open' : ''}`}>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">My Services</a></li>
+                <li><a href="#">My Skills</a></li>
                 <li><a href="#">Contact</a></li>
                 <li className="DateANDtime">
                     <span >{formatTime(currentTime)}</span>
@@ -187,10 +189,9 @@ const PortifolioTWO = () => {
                 <h1>Contact <span id="me">Me</span></h1>
                 Lets work together
                 <p>I'm glad you've visited my personal Portfolio website! If you have any questions, suggestions, or would like to collaborate, please feeel free to contact me through this form. I will endeavor to reply to your message as soon as possible</p>
-                    <ul className="Contact">
-                        <li><i className="fa-solid fa-envelope"></i><a href="#">ganiyutaofeeqolarewaju</a></li>
-                        <li><i className="fa-solid fa-phone"></i>09026636087</li>
-                    </ul>
+         
+                        <li><i>{MailIcon}</i><a href="#">ganiyutaofeeqolarewaju@gmail.com</a></li>
+                        <li> <i>{PhoneIcon}</i> < a href="tel:09026636087">+234 9026636087</a></li>
             </div>
 
             <div className="ContactInput">
@@ -201,6 +202,8 @@ const PortifolioTWO = () => {
                     <button id="Submit" type="submit">Submit</button>
             </div>
         </div>
+    </div>
+    
     </div>
     <div className='SocialII'>
     <li><a href='#'> {InstagramIcon}</a></li>

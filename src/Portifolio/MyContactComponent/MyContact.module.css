@@ -1,5 +1,6 @@
 .MyContact{
     padding-inline: 30px;
+    width: initial;
 }
 
 .Container{
@@ -11,9 +12,10 @@
 }
 
 .MyContact .Container h1{
-    border-bottom: 5px solid gold;
+    border-bottom: .5vw solid gold;
     width: fit-content;
     line-height: 1.4;
+    font-size: 3vw;
 }
 .ContactInput div{
     width: 100%;
@@ -34,6 +36,12 @@
     gap: 20px;
     width: 100%;
 
+}
+.TextInput h2{
+    border-bottom: .5vw solid gold;
+    width: fit-content;
+    line-height: 1.4;
+    font-size: 3vw;
 }
 .TextInput button{
     width: 250px;
@@ -59,7 +67,7 @@
 }
 .MessageINpt textarea{
     height: 350px;
-    width: 95%;
+    width: initial;
     border-radius: 10px;
     background-color: transparent;
     resize: none;
@@ -70,6 +78,14 @@
 
 .MessageINpt{
     margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.MessageINpt button{
+    margin-top: 30px;
+
 }
 
 @media (max-width: 600px) {

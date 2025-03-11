@@ -8,9 +8,10 @@
     gap: 20px;
 }
 .ResumeContainer .Container h1{
-    border-bottom: 5px solid gold;
+    border-bottom: .5vw solid gold;
     width: fit-content;
     line-height: 1.4;
+    font-size: 3vw;
 }
 
 .Details{

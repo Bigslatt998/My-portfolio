@@ -147,8 +147,8 @@ a.LightMood{
 }
 .DarkMood{
     position: absolute;
-    bottom: -5px;
-    right: 15px;
+    bottom: -35px;
+    right: 0px;
     cursor: pointer;
 }
 

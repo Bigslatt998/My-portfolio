@@ -11,8 +11,7 @@ const Aside = ({Full, HandleLightMood,
       const AngleDown = <FontAwesomeIcon icon={faAngleDown}/>
       const AngleUp = <FontAwesomeIcon icon={faAngleUp}/>
   return (
-    <> 
-    {/* <div className={Styles.ProfileContainer}> */}
+    <div className={Styles.ProfileContainer}>
     <div className={Styles.Profile}>
         <div className={` ${Styles.Image} ${isLight ? Styles.LightMood : ''}`}>
             <img src={Full}/>
@@ -33,8 +32,7 @@ const Aside = ({Full, HandleLightMood,
                             onClick={handleDetailsOpen}>
                             <span className={Styles.Details}>More Details</span>
                             <span style={{marginLeft: '5px'}}>{isDetailsOpened ? AngleUp : AngleDown }</span></div>
-{/* </div> */}
-</>
+</div>
   )
 }
 

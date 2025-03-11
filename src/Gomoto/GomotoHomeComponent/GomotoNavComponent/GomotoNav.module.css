@@ -173,7 +173,17 @@
     text-align: center;
     background-color: rgb(248, 69, 69);
 }
-
+.Success{
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    color: white;
+    position: fixed;
+    z-index: 50;
+    width: 300px; height: fit-content;
+    text-align: center;
+    background-color: green;
+}
 
 @media (max-width: 1100px) {
     .CartIno ul{

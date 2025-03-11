@@ -7,7 +7,7 @@
   
   .board {
     position: relative;
-    background-color: #000;
+    background-color: rgb(207, 202, 202);
     border: 2px solid #333;
   }
   
@@ -22,9 +22,9 @@
   
   .food {
     position: absolute;
-    background-color: greenyellow;
+    /* background-color: greenyellow;
     border: 1px solid black;
-    border-radius: 50px 25%/ 50px 50% ;
+    border-radius: 50px 25%/ 50px 50% ; */
   }
   
   .score {
@@ -43,6 +43,7 @@
   .gameover button {
     padding: 10px 20px;
     font-size: 16px;
+    background-color: rgb(2, 63, 2);
     cursor: pointer;
   }
   .UPxDown{
@@ -56,6 +57,7 @@
     margin-top: 25px;
   }
   .UPxDown button{
+    background-color: rgb(2, 63, 2);
     width: 80px; height: 30px;
   }
 
@@ -67,3 +69,19 @@
     position: absolute;
     right: 0;
   }
+
+@media (max-width: 800px) {
+  .gameover{
+    position: absolute;
+    top: -25px;
+    width: 40px;
+    left: 10px;
+  }
+  .gameover h2{
+    font-size: 1rem;
+  }
+  .gameover button{
+    width: fit-content;
+    font-size: .5rem;
+  }
+}
