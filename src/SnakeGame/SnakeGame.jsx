@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import Styles from './SnakeGame.module.css'
 
 const SnakeGame = () => {
-  const cardData = ['🍎', '🍌', '🍒', '🍇', '🍉', '🍓', '🍍', '🥝'];
+  const cardData = ['🥜', '🥚', '🌭', '🍔', '🧀', '🍓', '🍿', '🥝'];
 
     const GRID_SIZE = 20; // Size of each grid cell
     const BOARD_SIZE = 380; // Size of the game board
