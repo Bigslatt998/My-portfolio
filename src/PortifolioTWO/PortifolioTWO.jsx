@@ -52,17 +52,17 @@ const PortifolioTWO = () => {
   return (
     <div className="PContainer">
     <div className="PortifolioContainer">
-        <div className="HeaderContainer">
+        <div id='Home' className="HeaderContainer">
             <header>
                 <nav>
                 <div className="Logo">
                     <h1>Portfolio</h1>
                 </div>
                 <ul className={`${'NavLink'} ${isMenu ? 'Open' : ''}`}>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">My Skills</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">My Skills</a></li>
+                <li><a href="#Contact">Contact</a></li>
                 <li className="DateANDtime">
                     <span >{formatTime(currentTime)}</span>
                     <span >{Moon}</span>
@@ -104,10 +104,10 @@ const PortifolioTWO = () => {
                 </h1>
                 <p>I am a Front-end developer</p>
                 <div className='Social'>
-                    <li><a href='#'> {InstagramIcon}</a></li>
-                    <li><a href='#'> {TwitterIcon}</a></li>
-                    <li><a href='#'> {TikTokIcon}</a></li>
-                    <li><a href='#'> {WhatsAppIcon}</a></li>
+                    <li><a href='https://www.instagram.com/icode_xx8?igsh=MW50eWQ1bnp3cDUxOQ%3D%3D&utm_source=qr'> {InstagramIcon}</a></li>
+                    <li><a href='https://x.com/icode_xx8?s=21'> {TwitterIcon}</a></li>
+                    <li><a href='https://www.tiktok.com/@icode_xx8?_t=ZM-8ubR6qWI4gB&_r=1'> {TikTokIcon}</a></li>
+                    <li><a href='https://wa.link/1zpzxb'> {WhatsAppIcon}</a></li>
                     <li><a href='mailto:ganiyutaofeeqolarewaju@gmail.com'>{MailIcon}</a> </li>
                 </div>
                 <div className="Buttonn">
@@ -119,7 +119,7 @@ const PortifolioTWO = () => {
                 </div>
                 </div>
         </main>
-        <div className="AboutMe">
+        <div id='About' className="AboutMe">
         <div className="AboutMeContainer">
         <div className="AboutMeImg">
             <img src={Full}/>
@@ -135,7 +135,7 @@ const PortifolioTWO = () => {
     </div>
     </div>
 
-    <div className="MyServices">
+    <div id="Skills" className="MyServices">
         <h1>MY SKILLS</h1>
         <div className="MyServicesContainer">
             
@@ -183,14 +183,14 @@ const PortifolioTWO = () => {
                 </article>
         </div>
     </div>
-    <div className="ContactContainer">
+    <div id='Contact' className="ContactContainer">
         <div className="container">
             <div className="ContactText">
                 <h1>Contact <span id="me">Me</span></h1>
                 Lets work together
                 <p>I'm glad you've visited my personal Portfolio website! If you have any questions, suggestions, or would like to collaborate, please feeel free to contact me through this form. I will endeavor to reply to your message as soon as possible</p>
          
-                        <li><i>{MailIcon}</i><a href="#">ganiyutaofeeqolarewaju@gmail.com</a></li>
+                        <li><i>{MailIcon}</i><a href='mailto:ganiyutaofeeqolarewaju@gmail.com'>ganiyutaofeeqolarewaju@gmail.com</a></li>
                         <li> <i>{PhoneIcon}</i> < a href="tel:09026636087">+234 9026636087</a></li>
             </div>
 
@@ -207,9 +207,10 @@ const PortifolioTWO = () => {
     </div>
     <div className='SocialII'>
     <li><a href='#'> {InstagramIcon}</a></li>
-                    <li><a href='#'> {TwitterIcon}</a></li>
-                    <li><a href='#'> {TikTokIcon}</a></li>
-                    <li><a href='#'> {WhatsAppIcon}</a></li>
+    <li><a href='https://www.instagram.com/icode_xx8?igsh=MW50eWQ1bnp3cDUxOQ%3D%3D&utm_source=qr'> {InstagramIcon}</a></li>
+                    <li><a href='https://x.com/icode_xx8?s=21'> {TwitterIcon}</a></li>
+                    <li><a href='https://www.tiktok.com/@icode_xx8?_t=ZM-8ubR6qWI4gB&_r=1'> {TikTokIcon}</a></li>
+                    <li><a href='https://wa.link/1zpzxb'> {WhatsAppIcon}</a></li>
                     <li><a href='mailto:ganiyutaofeeqolarewaju@gmail.com'>{MailIcon}</a> </li>
     </div>
     </div>

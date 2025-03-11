@@ -54,10 +54,10 @@ return (
                             </span>
                     </div>
                         <div className={Styles.Socials}>
-                        <a className={`${isLight ? Styles.LightMood : ''}`} href='#'> {InstagramIcon}</a>
-                    <a className={`${isLight ? Styles.LightMood : ''}`} href='#'> {TwitterIcon}</a>
-                    <a className={`${isLight ? Styles.LightMood : ''}`} href='#'> {TikTokIcon}</a>
-                    <a className={`${isLight ? Styles.LightMood : ''}`} href='#'> {WhatsappIcon}</a>
+                        <a className={`${isLight ? Styles.LightMood : ''}`} href='https://www.instagram.com/icode_xx8?igsh=MW50eWQ1bnp3cDUxOQ%3D%3D&utm_source=qr'> {InstagramIcon}</a>
+                    <a className={`${isLight ? Styles.LightMood : ''}`} href='https://x.com/icode_xx8?s=21'> {TwitterIcon}</a>
+                    <a className={`${isLight ? Styles.LightMood : ''}`} href='https://www.tiktok.com/@icode_xx8?_t=ZM-8ubR6qWI4gB&_r=1'> {TikTokIcon}</a>
+                    <a className={`${isLight ? Styles.LightMood : ''}`} href='https://wa.link/1zpzxb'> {WhatsappIcon}</a>
                     <a className={`${isLight ? Styles.LightMood : ''}`} href='mailto:ganiyutaofeeqolarewaju@gmail.com'>{MailIcon}</a>
                         </div>
                         <span onClick={HandleLightMood} className={Styles.DarkMood}>

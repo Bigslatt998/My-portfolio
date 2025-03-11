@@ -309,13 +309,12 @@
     border-radius: 25px;
     border: none;
     box-shadow: 0px 0px 10px 0px aqua;
-    
 }
 .Bton{
-    place-self: center;
+    /* place-self: center; */
     display: flex;
-    justify-content: center;
-    align-content: center;
+    /* justify-content: center; */
+    /* align-content: center; */
 }
 .AboutMeText button:hover{
     border-radius: 0px;
@@ -609,6 +608,12 @@
     }
     .ServiceArticle{
         /* display: none; */
+    }
+    .Bton{
+        place-self: center;
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
 }
 

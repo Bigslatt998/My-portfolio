@@ -3,6 +3,9 @@
   --LightMood: rgb(230, 226, 226);
 
 }
+html{
+  scroll-behavior: smooth;
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color-scheme: light dark;
