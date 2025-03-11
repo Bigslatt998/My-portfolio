@@ -112,6 +112,9 @@
         margin-top: 0;
         padding: 10px;
         flex-direction: row;
+        align-items: start;
+    justify-content: start;
+    place-self: start;
     }
     .Contact{
         display: none;
