@@ -42,15 +42,12 @@
 .Myskills{
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: repeat(2, auto);
     width: 100%;
-    /* background-color: red; */
 }
 .Box{
     border-radius: 10px;
-    padding: 20px;
-    /* background-color: rgb(95, 93, 93); */
     line-height: 20px;
 }
 
