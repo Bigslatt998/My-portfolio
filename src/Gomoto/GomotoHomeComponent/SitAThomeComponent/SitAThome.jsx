@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {  faXmark , faPhone, faSearch, faBars , faShoppingBasket, faAngleRight, faUsers, faMobileScreen, faMap, faClock} from '@fortawesome/free-solid-svg-icons';
 import homedecor from '../../../assets/homedecor.png'
-import oldsit from '../../../assets/oldsit.jpg'
+import oldsit from '../../../assets/Oldsit.jpg'
 
 
 
