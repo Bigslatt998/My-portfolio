@@ -82,7 +82,7 @@ const About = ({HandleLightMood, setIsLight, isLight, handleDetailsOpen, isDetai
   return (
     <div className={Styles.AboutContainter}>
             <div className={Styles.Container}>
-                <div className="Text">
+                <div className={Styles.Text}>
             <h1>About Me</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci totam dolorem vero animi magni doloremque minus rem possimus. Omnis culpa libero itaque aliquid aspernatur asperiores nulla, deserunt est nisi quaerat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos error, quibusdam assumenda, nulla minima, nesciunt velit molestiae quis sequi quasi possimus libero? Mollitia pariatur sit illum alias saepe nostrum itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aspernatur id modi obcaecati quisquam laudantium odit tenetur sunt consequatur consequuntur, aliquid omnis incidunt harum eligendi officiis repellat repudiandae quibusdam in?</p>
             </div>
@@ -91,7 +91,7 @@ const About = ({HandleLightMood, setIsLight, isLight, handleDetailsOpen, isDetai
                 {Skillsdetails.map((Content) => (
                     <div key={Content.id} className={`${Styles.Box} ${isLight ? Styles.LightMood : ''}`} >
                         <p style={{fontSize: '1.5rem'}}>{Content.Icon} <span style={{marginLeft: '10px'}}>{Content.Text}</span></p>
-                        <p>{Content.Discription}</p>
+                        <p className={Styles.Discription}>{Content.Discription}</p>
                         <div className={`${Styles.ProgressContainer} ${isLight ? Styles.LightMood : ''}`}>
                         <div className={`${Styles.ProgressBar} ${isLight ? Styles.LightMood : ''}`} style={{width: `${Content.Progress}%`}}>
                         {Content.Progress}%

@@ -58,6 +58,7 @@ const PortifolioTWO = () => {
                 <div className="Logo">
                     <h1>Portfolio</h1>
                 </div>
+
                 <ul className={`${'NavLink'} ${isMenu ? 'Open' : ''}`}>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">About</a></li>
@@ -127,7 +128,7 @@ const PortifolioTWO = () => {
         <div className="AboutMeText">
         <h1>About <span className="me">Me</span></h1>
         <p>Ganiyu Taofeeq</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur assumenda sapiente eum! Dolorum vero blanditiis, laboriosam voluptatem laudantium ullam hic recusandae aliquid nostrum facilis, accusantium rerum ad alias assumenda.</p>
+        <p id="AboutMeText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur assumenda sapiente eum! Dolorum vero blanditiis, laboriosam voluptatem laudantium ullam hic recusandae aliquid nostrum facilis, accusantium rerum ad alias assumenda.</p>
         <div className="Bton">
             <button id="HireMe" type="button">Hire Me</button>
     </div>
@@ -206,12 +207,11 @@ const PortifolioTWO = () => {
     
     </div>
     <div className='SocialII'>
-    <li><a href='#'> {InstagramIcon}</a></li>
     <li><a href='https://www.instagram.com/icode_xx8?igsh=MW50eWQ1bnp3cDUxOQ%3D%3D&utm_source=qr'> {InstagramIcon}</a></li>
-                    <li><a href='https://x.com/icode_xx8?s=21'> {TwitterIcon}</a></li>
-                    <li><a href='https://www.tiktok.com/@icode_xx8?_t=ZM-8ubR6qWI4gB&_r=1'> {TikTokIcon}</a></li>
-                    <li><a href='https://wa.link/1zpzxb'> {WhatsAppIcon}</a></li>
-                    <li><a href='mailto:ganiyutaofeeqolarewaju@gmail.com'>{MailIcon}</a> </li>
+    <li><a href='https://x.com/icode_xx8?s=21'> {TwitterIcon}</a></li>
+    <li><a href='https://www.tiktok.com/@icode_xx8?_t=ZM-8ubR6qWI4gB&_r=1'> {TikTokIcon}</a></li>
+    <li><a href='https://wa.link/1zpzxb'> {WhatsAppIcon}</a></li>
+    <li><a href='mailto:ganiyutaofeeqolarewaju@gmail.com'>{MailIcon}</a> </li>
     </div>
     </div>
   )

@@ -73,6 +73,10 @@
         flex: 1 1 calc(45% - 32px);
 
     }
+    .Foodtype{
+        width: 95%;
+    }
+
 
 }
 
