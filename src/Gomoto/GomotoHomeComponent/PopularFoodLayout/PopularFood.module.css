@@ -1,3 +1,6 @@
+.PopularContainer{
+    width: 100%;
+}
 .PopularFood nav ul{
     display: flex;
     

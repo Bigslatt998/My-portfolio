@@ -29,6 +29,7 @@ const FoodType = () => {
   ]
 
   return (
+    <div className={Styles.FoodTypeContainer}>
       <div className={Styles.Foodtype}>
               {FoodType.map((Content , id) => (
                 <div key={Content.id} className={`${Styles.Box}`} onClick={HandleFastFoodOrder[id]}>                  
@@ -36,11 +37,12 @@ const FoodType = () => {
                 <div className={Styles.Icon}>
                     <i>{Content.Icon}</i>
                   </div>
-                  <div className="Text">
-                    {Content.Text}
+                  <div className={Styles.Text}>
+                    <p>{Content.Text}</p>
                   </div>
               </div>
               ))}
+              </div>
               </div>
   )
 }

@@ -25,12 +25,13 @@ const SitAThome = () => {
 
     
   return (
+    <div className={Styles.SitAtHomeContainer}>
     <div className={Styles.SitAtHome}>
               <div className={Styles.SitAtHomeImg}>
                 <img src={oldsit}/>
               </div>
               <div className={Styles.SitAtHomeText}>
-               
+                <div className={Styles.hjgjjg}>
                 <div className={Styles.TText}>
                 <p>Sit at Home</p>
                 <h3>We Will Take Care</h3>
@@ -45,6 +46,8 @@ const SitAThome = () => {
                   ))}
                 </div>
                 <button className={Styles.btnII}>Read More</button>
+              </div>
+              </div>
               </div>
             </div>
   )

@@ -1,5 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Concert+One&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Oxanium:wght@200..800&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+DK+Loopet:wght@100..400&family=Road+Rage&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&family=Satisfy&family=Smokum&family=Style+Script&family=Tiny5&family=Waterfall&display=swap');
+.CafeAndResturant{
+    width: 100%;
+}
 .Recommendation{
     text-align: center;
     line-height: 5px;

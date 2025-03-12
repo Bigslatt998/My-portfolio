@@ -21,9 +21,12 @@
     background-position: 0px 200px;
     background-image: url('../../assets/EarthBackGround.png');
 }
-
+.GomotoHomeContainer main{
+    width: 100%;
+}
 
 .hhhhh{
+    width: 100%;
     display: flex;  
 }
 .Delivery img{

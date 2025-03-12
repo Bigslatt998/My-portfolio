@@ -6,7 +6,7 @@ import Styles from './PopularFood.module.css'
 const PopularFood = () => {
   const [CurrentPage, setCurrentPage] = useState('FastFood')
   return (
-    
+    <div className={Styles.PopularContainer}>
     <div className={Styles.PopularFood}>
     <p>Quick Pick</p>
           <h2>Popular Goods</h2>
@@ -25,7 +25,7 @@ const PopularFood = () => {
 {/* <Outlet/> */}
           </nav>
           </div>
-
+          </div>
   )
 }
 
